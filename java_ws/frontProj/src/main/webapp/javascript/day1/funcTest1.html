@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>funcTest1.html</title>
+<script type="text/javascript">
+	function getGrade(myForm){
+		var score=myForm.avg.value;
+		var result="";
+		if(score>=90){
+			result="A";
+		}else if(score>=80){
+			result="B";
+		}else if(score>=70){
+			result="C";
+		}else if(score>=60){
+			result="D";
+		}else if(score<60){
+			resukt="F";
+		}else{
+			result="잘못 입력!";
+		}		
+		myForm.grade.value=result;
+	}
+</script>
+</head>
+<body>
+<H3> 학점 구하기</H3>
+<hr>
+<FORM NAME="frmScore"> 
+평균 점수 입력 <INPUT TYPE="text" name="avg"><P> 
+<INPUT TYPE="button" value="학점구하기" onClick="getGrade(this.form)">
+학점 : <INPUT TYPE="text" name="grade" size="15"><p>
+</FORM>
+
+</body>
+</html>

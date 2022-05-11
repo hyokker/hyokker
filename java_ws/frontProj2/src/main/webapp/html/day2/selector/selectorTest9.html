@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest9.html</title>
+<style type="text/css">
+	/*형태 구조 선택자
+	- 일반 구조 선택자와 비슷하지만 태그 형태를 구분함
+	:first-of-type 형제 관계 중에서 첫 번째로 등장하는 특정 태그를 선택
+	:last-of-type 형제 관계 중에서 마지막으로 등장하는 특정 태그를 선택
+	:nth-of-type(수열) 형제 관계 중에서 앞에서 수열 번째로 등장하는 특정 태그를 선택
+	*/
+	h1:first-of-type {
+	color : red;
+	}
+	h2:first-of-type {
+	color : blue;
+	}
+	h3:first-of-type {
+	color : green;
+	}
+	
+/* 	태그의 자식 중 첫 번째로 등장하는 모든 형태의 태그를 선택 */
+	.div2> *:first-of-type {
+	background: skyblue;
+	}
+	/* FIRST-CHILD 는 주로 같은 태그들이 자식일 때 선택하는 용도로 사용됨
+	예) 모두 li 중에 첫번째 자식을 찾거나, 모두 h1 중에 찾거나 하는 경우*/
+	/*같은 부모를 갖는 자식 중 첫번째 자식이 h2여야만
+	선택됨 => 이 예제에서는 선택안됨, h1이 첫째자식이므로 */
+	.div3 h2:first-child {
+	border: 2px solid green;
+	}
+	.div3 h2:first-of-type { /*h2 중에 첫번째 태그 선택됨*/
+	background: yellow;
+	}
+</style>
+</head>
+<body>
+<div class="div1">
+	<h1>Header - 1</h1>
+	<h2>Header - 2</h2>
+	<h3>Header - 3</h3>
+	<h3>Header - 3</h3>
+	<h2>Header - 2</h2>
+	<h1>Header - 1</h1>
+</div>
+<div class="div2">
+	<h1>Header - 1</h1>
+	<h2>Header - 2</h2>
+	<h3>Header - 3</h3>
+	<h4>Header - 4</h4>
+	<h5>Header - 5</h5>
+	<h6>Header - 6</h6>
+</div>
+<hr>
+<div class="div3">
+	<h1>Header - 1</h1>
+	<h2>Header - 2</h2>
+	<h3>Header - 3</h3>
+	<h3>Header - 3</h3>
+	<h2>Header - 2</h2>
+	<h1>Header - 1</h1>
+</div>
+</body>
+</html>

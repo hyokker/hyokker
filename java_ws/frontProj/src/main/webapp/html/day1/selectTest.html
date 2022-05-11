@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectTest.html</title>
+</head>
+<body>
+<h1>textarea</h1>
+<form method="get" action="a.jsp">
+   소개:<textarea rows="5" cols="30" name="intro1"></textarea><br>
+   소개2:<textarea rows="7" cols="20" name="intro2">자기소개 입력</textarea><br>
+   소개3:<textarea rows="7" cols="20" name="intro3">
+      자기소개 입력
+      </textarea><br>
+   과일 : 
+   <select name="fruit">
+      <option>사과</option>   
+      <option>딸기</option>   
+      <option>포도</option>   
+   </select><br>
+   언어:   
+   <select multiple="multiple" name="lang">
+      <option value="1">java</option>   
+      <option value="2">jsp</option>   
+      <option value="3">spring</option>   
+   </select><br>
+   group:
+   <select name="group">
+      <optgroup label="html5">
+         <option>multi</option>
+         <option>con</option>
+         <option>dev</option>
+      </optgroup>
+      <optgroup label="css3">
+         <option>ani</option>
+         <option>3D</option>
+      </optgroup>      
+   </select>   
+   <br><br>
+   <button>전송</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>day4/effectTest1.html</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').first().click(function(){
+			$('.list1').toggle();
+		});
+		
+		$('button').eq(1).click(function(){
+			$('.list2').slideToggle(2000);
+		});
+		$('button').last().click(function(){
+			$('.list3').fadeToggle('slow');
+		});
+	});
+</script>
+</head>
+<body>
+	<button>show Toggle</button>
+	<button>slide Toggle</button>
+	<button>fade Toggle</button>
+	<div class="list1">
+		<h1>제목1</h1>
+		<p>내용1입니다</p>
+	</div>
+	<br>
+	<div class="list2">
+		<h1>제목2</h1>
+		<p>내용2입니다</p>
+	</div>
+	<br>
+	<div class="list3">
+		<h1>제목3</h1>
+		<p>내용3입니다</p>
+	</div>
+</body>
+</html>

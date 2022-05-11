@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>UI테스트(홀수형2)</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../jquery_정답/answer.js"></script>
+<link rel="stylesheet" href="jqtest.css">
+<script type="text/javascript">
+//함수명은 반드시 지켜주세요.
+//body에 있는 내용은 수정하지 않습니다.
+/* 	
+	function target15(){
+		$('#target15')
+	}
+	function target17(){
+		$('#target15').
+	} */
+	function target19(){
+		$('#target19').empty();
+	}
+	
+ 	function target16(){
+ 		var str = Number('10');
+ 		var b = Number($('#target16 > td').text());
+		$('#target16 > td').each(function(){
+			$(this).css('background','cyan');
+		});
+	}
+	function target18(){
+		$('#target18 > span:eq(0)').css("font-weight",'bold');
+	} 
+	function target20(){
+		$('#target20  input[type=text]').attr("disabled",'true');
+	}
+</script>
+</head>
+<body>
+<h2>jQuery Test</h2>
+
+<fieldset>
+	<legend>15.answer에 연산 결과를 채우시오.</legend>
+	
+	<div id="target15"><button onclick="target15()">#target15</button>
+		<table>
+			<thead>
+				<tr>
+				<td>NUM1</td><td>OPER</td><td>NUM2</td><td>EQULS</td><td>ANSWER</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>42</td><td>+</td><td>12</td><td>=</td><td>?</td>
+				</tr>
+				<tr>
+				<td>15</td><td>+</td><td>87</td><td>=</td><td>?</td>
+				</tr>
+				<tr>
+				<td>102</td><td>+</td><td>25</td><td>=</td><td>?</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</fieldset>
+
+<fieldset>
+	<legend>17.target17에 배경색을 반복해서 바뀌게 적용하세요.(예:red와 yellow반복 바뀜)</legend>
+	<button onclick="target17()">#target17</button><br/><br/>
+	<div id="target17">#target17</div>
+</fieldset>
+
+<fieldset>
+	<legend>19.target19의 자식 요소들을 모두 삭제하세요.</legend>
+	<button onclick="target19()">#target19</button><br/><br/>
+	<div id="target19">
+		<i>#target19</i>
+		<br/>
+		<span>child1</span><br/>
+		<span>child2</span><br/>
+		<span>child3</span><br/>
+		<i>child4</i><br/>
+		<b>child5</b>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>16.Cell안에 숫자가 10보다 큰 cell들만 배경색을 넣어주세요.</legend>
+	<button onclick="target16()">#target16</button>
+	<div id="target16">
+		<table>
+				<tr>
+				<td>15</td><td>24</td><td>9</td>
+				</tr>
+				<tr>
+				<td>4</td><td>78</td><td>2</td>
+				</tr>
+				<tr>
+				<td>7</td><td>51</td><td>63</td>
+				</tr>
+		</table>
+	</div>
+	
+</fieldset>
+
+<fieldset>
+	<legend>18.bold 텍스트가 포함되어 있는 엘리먼트의 텍스트에 bold효과를 적용하세요</legend>
+	<button onclick="target18()">#target18</button><br/><br/>
+	<div id="target18">
+		<i>#target18</i>
+		<br/><br/>
+		<span>bold</span><br/>
+		<span>strike</span><br/>
+		<span>blink</span>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>20.textbox에 내용을 읽기만 가능하게 만들고 폰트색깔은 red를 적용하세요.</legend>
+	<button onclick="target20()">#target20</button><br/><br/>
+	<div id="target20">
+		<i>#target20</i><br/><br/>
+		<input type="text" value="나를 읽기만 가능하게 만들어줘!" size="30"/>
+	</div>
+</fieldset>
+
+<br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
+
+
+

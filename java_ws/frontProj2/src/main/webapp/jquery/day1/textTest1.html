@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//1.특정 태그를 선택해서 이벤트 지정
+		$('#selLang').change(function(){
+			//2.특정 태그를 선택해서 선택한 값을 읽어온다 
+			var str=$('#selLang > option:selected').text();
+			
+			//3.특정 태그를 선택해서 값을 출력한다
+			$('#txtLang').val(str);
+			$('#result').text(str);
+		});
+		
+		$('button:first').click(function(){
+			alert("text :" + $('div').text());
+		
+		});
+		
+		$('button:eq(1)').click(function(){
+			alert("html :" + $('div').html());
+			
+			
+		});
+	});
+
+</script>
+</head>
+<body>
+	<select id="selLang">
+		<option>jsp</option>
+		<option>spring</option>
+		<option>JQuery</option>
+	</select>
+	<br>
+	<br>
+	<h3>선택된 값</h3>
+	<input type="text" id="txtLang" />
+	<span id="result"></span>
+<hr>
+<button>text연습</button>
+<button>html연습</button>
+<div><b>div태그1</b></div>
+<div><b>div태그2</b></div>
+<div><b>div태그3</b></div>
+
+
+</body>
+</html>

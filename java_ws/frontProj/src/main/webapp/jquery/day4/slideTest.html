@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bool=true; //more
+		$('.message').hide();
+		
+		$('span.readmore').click(function(){
+			$('.message').slideToggle(1000);
+			
+			if(bool){//
+				$(this).text('Read Less');
+				bool=false;
+			}else{
+				$(this).text('Read More');
+				//bool=true;
+			}
+			
+			bool=!bool;
+		});
+	});
+</script>
+</head>
+<body>
+	<div>Styles make the formatting job much easier and efficient.</div>
+	<span class="readmore">Read More...</span>
+	<div class="message">To give an attractive look to web sites,
+		styles are heavily used. JQuery is a powerful JavaScript library that
+		allows us to add dynamic elements to our web sites. Not only it is
+		easy to learn but easy to implement too. A person must have a good
+		knowledge of HTML and CSS and a bit of Javascript. JQuery is an open
+		source project that provides a wide range of features with cross
+		platform compatiblity.</div>
+</body>
+</html>

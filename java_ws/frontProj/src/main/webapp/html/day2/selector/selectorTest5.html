@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 후손선택자
+	선택자A 선택자B : 선택자A의 후손에 위치하는 선택자B를 선택함*/
+	#header h1{
+		color: red;
+	}
+	#section h1{
+		color: red;
+	}
+	/* id 속성으로 header를 가지는 태그의 후손 위치에 있는 h1태그와 단독 h2태그*/
+	#header h1,h2{background: skyblue;}
+	/*id 속성으로 header를 가지는 태그의 후손 위치에 있는 h1 태그와
+		id 속성으로 header를 가지는 태그의 후손 위치에 있는 h2 태그 선택*/
+	#header h1, #header h2{ border : 3px solid green}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">Lorem ipsum</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<div id="section">
+		<h2 class="title">Lorem ipsum</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+
+</body>
+</html>

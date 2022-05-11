@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function changeImage(imgSrc,id){
+		document.getElementById(id).src="../../image/" + imgSrc+".jpg";
+	}
+</script>
+</head>
+<body>
+<A HREF="#" onmouseover="changeImage('on', 'roll')"
+onmouseout="changeImage('off', 'roll')" >
+<IMG SRC="../../image/off.jpg" NAME="roll" id="roll" style="border:0">
+</A>
+<BR><BR> 
+<H3>그림에 마우스를 가져가면 다른 그림으로 바뀝니다.</H3>
+</body>
+</html>

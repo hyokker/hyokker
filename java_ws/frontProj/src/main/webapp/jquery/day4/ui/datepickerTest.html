@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ui/datepickerTest.html</title>
+<link href="../../css/jquery-ui.min.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#startDay').datepicker();
+		$('#endDay').datepicker({
+			dateFormat:'yy-mm-dd',
+			changeYear:true,
+			dayNamesMin:['일','월','화','수','목','금','토'],
+			monthNames:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+		});
+		$('button').click(function(){
+			var curDate=$('#startDay').datepicker("getDate");
+			alert(curDate);
+		});
+	});
+</script>
+</head>
+<body>
+	<p>
+		Date: <input type="text" id="startDay">
+	</p>
+	
+	<p>
+		Date: <input type="text" id="endDay">
+	</p>
+	<button>버튼</button>
+</body>
+</html>

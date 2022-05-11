@@ -1,0 +1,141 @@
+legend {
+	font-size: 15pt;
+	font-family: ¸¼Àº °íµñ;
+	color: grey;
+}
+
+#target01,#target02,#target03,.target05,.target06,#parent1,#parent2,.target09,#target10,#target13,#target17,#target19
+,#target18
+	{
+	width: 150px;
+	height: 150px; 
+	background:rgba(235,147,172,1);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(10.69%,rgba(248,220,220,1)),
+	color-stop(99.54%,rgba(235,147,172,1)));
+	background:-webkit-linear-gradient(top,rgba(248,220,220,1) 10.69%,rgba(235,147,172,1) 99.54%);
+	background:-moz-linear-gradient(top,rgba(248,220,220,1) 10.69%,rgba(235,147,172,1) 99.54%);
+	background:-o-linear-gradient(top,rgba(248,220,220,1) 10.69%,rgba(235,147,172,1) 99.54%);
+	background:-ms-linear-gradient(top,rgba(248,220,220,1) 10.69%,rgba(235,147,172,1) 99.54%);
+	background:linear-gradient(to bottom,rgba(248,220,220,1) 10.69%,rgba(235,147,172,1) 99.54%);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=rgba(248,220,220,1),
+	 endColorstr=rgba(235,147,172,1),GradientType=0);
+}
+
+#target14{
+	width: 250px;
+	height: 150px;
+	background: #FFC3FA;
+}
+
+#target11 {
+	border: 2px dashed orange;
+	width: 250px;
+}
+
+#target11 h1,#target11 h2,#target11 h3,#target11 h4,#target11 h5 {
+	background: #CBFF75;
+}
+
+#fieldset7 {
+	position: relative;
+	height: 200px;
+}
+
+#parent2 {
+	position: relative;
+	top: -150px;
+	left: 170px;
+}
+
+#child {
+	width: 80px;
+	height: 80px;
+	background: white;
+	margin: 15px auto;
+	font-size: 10pt;
+}
+
+#parentdiv {
+	width:300px;
+	height: 150px;background: #FFC3FA;
+}
+
+.target04 {
+	width: 250px;
+	background: yellow;
+	margin-top: 20px;
+}
+
+#target02 span {
+	background: yellow;
+	margin-left: 50px;
+}
+
+fieldset {
+	width: 70%;
+	border-radius: 10px;
+	border: 1px solid grey;
+	margin-top: 15px;
+}
+
+.target12 {
+	background: #FF73BE;
+	width: 100px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.target12 span {
+	background: #FFD2FF;
+	margin-left: 20px;
+}
+
+input[name=countview] {
+	position: relative;
+	top: 40px;
+	left: 30px;
+}
+
+#target14 table,#target15 table,#target16 table {
+	border-collapse: collapse;
+	margin: 30px auto;
+}
+
+#target14 table td,#target15 table td {
+	border: 1px solid #7BA87B;
+	text-align: center;
+}
+
+#target14 table td:FIRST-CHILD {
+	background: orange;
+}
+
+#target14 table {
+	width: 200px;
+}
+
+#target14 table td {
+	padding: 5px;
+}
+
+#target15 table thead tr {
+	background: #008080;
+}
+
+#target15 table td {
+	padding: 10px;
+}
+
+#target16 table td {
+	border: 1px solid #E0904C;
+	font-size: 30pt;
+	color: #2C952C;
+	text-align: center;
+	padding: 15px;
+}
+
+#target19 span,#target19 i, #target19 b{background: yellow; margin-left: 20px;} 
+#target18 span{background:  #AECDFF ; margin-left:20px;}
+#target20{background:#FFC3FA; width:300px; height:100px; }
+#target20 input{margin-left: 30px;}
+

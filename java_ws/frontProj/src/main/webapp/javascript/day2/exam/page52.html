@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<SCRIPT type="text/javascript">
+	function upImage(imgSrc, imgName) {
+		document.getElementById(imgName).src = "../../image/" + imgSrc + ".jpg";
+	}
+</SCRIPT>
+</head>
+<body>
+
+	<A HREF="#" onmouseover="upImage('on', 'roll')"
+		onmouseout="upImage('off', 'roll')"> <IMG
+		SRC="../../image/off.jpg" NAME="roll" id="roll" style="border: 0"></A>
+	<BR>
+	<BR>
+	<H3>그림에 마우스를 가져가면 다른 그림으로 바뀝니다.</H3>
+
+</body>
+</html>

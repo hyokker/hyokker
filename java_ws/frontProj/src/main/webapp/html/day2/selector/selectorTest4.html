@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest4.html</title>
+<style type="text/css">
+	/* 속성 선택자 
+	선택자[속성] : 특정한 속성이 있는 태그를 선택함
+	선택자[속성=값] : 특정한 속성 안의 값이 특정 값과 같은 태그를 선택
+	*/
+	input[type=text]{
+		background: red;
+	}
+	
+	input[type=password]{
+		background: blue;
+	}
+	
+	input[type]{
+		height: 50px;
+	}
+	
+	a[href]{
+		font-size: 20pt;
+	}
+</style>
+
+</head>
+<body>
+	<form>
+		<input/>
+		<input type="text" />
+		<input type="password" />
+	</form>
+	<hr>
+	<a href="http://www.naver.com">naver</a><br>
+	<a>a태그</a><br>
+
+</body>
+</html>

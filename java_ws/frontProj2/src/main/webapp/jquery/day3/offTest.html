@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			$(this).html('클릭됨');
+			alert('이벤트 발생');
+			
+			$(this).off();
+		});
+		
+		$('img').on('mousedown',function(){
+			var x = event.pageX;
+			var y = event.pageY;
+			
+			$('#div1').html('x='+x+', y='+y);
+		});
+	});
+</script>
+</head>
+<body>
+	<button>버튼1</button>
+	<br>
+	<button>버튼2</button>
+	<br>
+	<button>버튼3</button>
+	<br>
+	
+	<hr>
+	
+	<img src="../images/dog.jpg" border="1"><br><br>
+	<div id="div1"></div>
+	
+</body>
+</html>

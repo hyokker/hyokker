@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#photos img').attr({
+			border: '3px',
+			height: '100'
+		}).attr('title', function(idx){
+			return (idx+1) + "번째 이미지"
+		});
+		
+/* 		$('#photos img').attr('width',function(idx){
+			return(idx+1)*100;
+		}); */
+		
+		$('#photos img').each(function(idx){
+			$(this).attr('width',(idx+1)*100);
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="photos">
+		<img src="../images/dog.jpg" />
+		<img src="../images/magnum1.jpg" />
+		<img src="../images/snow.jpg" />
+		<img src="../images/wood.JPG" />
+		<img src="../images/magnum2.jpg" />
+	</div>
+</body>
+</html>

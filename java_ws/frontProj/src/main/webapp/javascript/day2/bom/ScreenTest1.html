@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<SCRIPT type="text/javascript">
+	var swidth = 1024;
+	var sheight = 768;
+	if (screen.width < swidth || screen.height < sheight) {
+		alert("1024*768 보다 작은 해상도를 위한 문서입니다.");
+	} else {
+		alert("1024*768 이상의 해상도를 위한 문서입니다.");
+	}
+</SCRIPT>
+</head>
+<body>
+	<H1>screen 객체 예제</H1>
+	<SCRIPT type="text/javascript">
+		document.write("픽셀 당 높이 : " + screen.height + "<P>");
+		document.write("픽셀 당 넓이 : " + screen.width + "<P>");
+		document.write("사용 가능한 화면의 높이 : " + screen.availHeight + "<P>");
+		document.write("사용 가능한 화면의 넓이 : " + screen.availWidth + "<P>");
+		document.write("픽셀 당 비트수 : " + screen.pixelDepth + "<P>");
+		document.write("사용 가능한 색상수 : " + screen.colorDepth + "<P>");
+	</SCRIPT>
+
+</body>
+</html>

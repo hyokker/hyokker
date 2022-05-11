@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	width: 1000px;
+	overflow: hidden;
+}
+div label{
+	float: left;;
+	width: 100px;
+}
+</style>
+</head>
+<body>
+<form>
+	<div id="id">
+	<div><label class="아이디">회원 아이디</div>	<input type="text" style="text-align: left; width:100px";></label>
+	<input type="button" value="중복확인"><span>띄어쓰기 없이 영/숫자 6~10자</span> 
+	</div>
+	
+	<div id="pwd">
+	<div><label class="password">비밀 번호</div><input type="password" style="text-align: left; width:100px";></label>
+	<span style="color : orange">비밀번호 도움말</span><span>6~15자의 영문 대/소문자, 숫자 및 특수문자 조합</span>
+	</div>
+	
+	<div id="pwdCheck">
+	<label class="password">비밀 번호 확인</label><input type="password" style="text-align: left; width:100px";>
+	</div>
+	
+	<div id="account">
+	<label>G통장 비밀번호</label><input type="password" style="text-align: left; width:100px"; ><input type="button" value="G통장이란?" style="text-align: left; width:100px";>
+	<span style="color : orange">비밀번호 도움말</span><span>6~15자의 영문 대/소문자, 숫자 및 특수문자 조합</span><br>
+	<label>-G통장 비밀번호는 G마켓에서 제공받은 <span style="font-weight: bold">사이버머니 사용</span> 및 <span style="font-weight: bold" >기타</span> 인증을 위해 필요한 비밀번호 입니다.</label><br>
+	<label>-일반 비밀번호와 G통장 비밀번호는  <span style="font-weight: bold">동일한 번호로 사용할 수 없습니다</span></label>
+	</div>
+	
+	<div id="accountCheck">
+	<label>G통장 비밀번호 확인</label><input type="password" style="text-align: left; width:100px";>
+	</div>
+	
+	<div id="passhint">
+	<label>비밀번호 힌트</label>
+	<span>질문</span>
+	<select name="hint">
+		<option>== 질문을 선택하세요 ==</option>
+		<option>내가 살던 집은?</option>
+		<option>내가 나왔던 학교는?</option>
+	</select><span><input type="text" ></span><br>
+	<span>답변</span><input type="text" >
+	</div>
+	
+	<div id="name">
+	<label>이름</label>
+	<input type="text" style="text-align: left; width:100px";>
+	</div>
+	
+	<div id="email">
+	<label>E-mail</label><input type="text" style="width:100px"><span>@</span><input type="text" style="width:100px">
+	<select name="mail">
+	<option>직접 입력</option>
+	<option>naver.com</option>
+	<option>daum.net</option>
+	</select>
+	</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<STYLE>
+.on {color:steelblue; font-weight:bold}
+</STYLE> 
+<script type="text/javascript">
+	function applyClass(){
+		document.getElementById("h2").className="on";
+	}
+	
+	function applyClass2(id,type){
+		document.getElementById(id).className=type;
+	}
+</script>
+</head>
+<body>
+<h1 class="on">h1태그</h1>
+
+	<h1 onmouseover="this.className='on';" onmouseout="this.className='';">
+		자바스크립트</h1>
+	<h2 id="h2" onmouseover="applyClass()" onmouseout="this.className='';">
+		className을 이용하여 스타일 제어</h2>
+	<h3 id="h3" onmouseover="applyClass2(this.id, 'on')"
+		onmouseout="applyClass2(this.id, '')">스타일</h3>
+
+</body>
+</html>

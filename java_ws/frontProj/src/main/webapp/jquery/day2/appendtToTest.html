@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>appendtToTest.html</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/*$(html)태그 - 문서 객체를 생성한다
+	  $('선택자')- 문서 객체를 선택한다.*/
+	$(document).ready(function(){
+		$('<h1></h1>').html('안녕').appendTo('#div1');
+		$('<h2>안녕하세요</h2>').appendTo('#div2');
+		
+		$('<img>').attr('src','../images/dog.jpg').appendTo('#div3');
+		$('<img>',{src:'../images/snow.jpg',
+			width:100,
+			border:1
+			}).appendTo('#div4');
+	});   
+	  
+</script>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+
+	<hr>
+
+	<div id="div3"></div>
+	<div id="div4"></div>
+</body>
+</html>

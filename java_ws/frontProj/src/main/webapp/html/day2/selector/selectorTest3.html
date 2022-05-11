@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest3.html</title>
+<style type="text/css">
+	/*여러개의 클래스 선택자 사용*/
+	
+	.item{
+		color:red;
+	}
+	.header{
+		background: blue;
+	}
+	
+	/* 태그 선택자와 클래스 선택자
+	 - class 속성이 서로 다른 태그에 적용된다면, 태그 선택자와 클래스선택자를
+	 함께 사용해 더 정확하게 태그를 선택할 수 있다*/
+	 /*li 태그중 class 속성으로 select를 가지고 있는 태그 선택*/
+	 li.select{
+	 	color:orange;
+	 	font-size: 15pt;
+	 }
+</style>
+</head>
+<body>
+	<!-- item클래스와 header클래스가 함께 적용됨 -->
+	<h1 class="item header">Lorem ipsum</h1>
+	<hr>
+	<h1 class="select">Lorem ipsum</h1>
+	<ul>
+		<li class="select">Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+	</ul>
+
+</body>
+</html>

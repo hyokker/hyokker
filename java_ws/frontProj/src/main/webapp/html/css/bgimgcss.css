@@ -1,0 +1,81 @@
+Body {
+	font-family: "¸¼Àº °íµñ", "°íµñ"," ±¼¸²¡°;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: #069;
+	padding: 10px;
+	overflow: hidden;
+}
+
+header h1 {
+	width: 40%;
+	color: white;
+	float: left;
+}
+
+header nav {
+	width: 60%;
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+	margin: 15px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+dt {
+	font-weight: bold;
+	color: purple;
+}
+
+H1 {
+	font-size: 2em;
+}
+
+section {
+	overflow: hidden;
+	border: 5px solid #333;
+	padding: 5px;
+}
+
+section article {
+	float: left;
+	width: 30.8%;
+	height: 600px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px dotted #333;
+}
+
+aside {
+	clear: both;
+	padding: 10px;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #333;
+	color: white;
+}

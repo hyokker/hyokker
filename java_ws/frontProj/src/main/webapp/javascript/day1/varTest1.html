@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>varTest1.html</title>
+<script type="text/javascript">
+	//변수의 타입(종류)을 정의하지 않아도 코드를 실행할 때 자동으로 타입이 결정된다
+	var a;
+	a=10;
+	document.write("a="+a+"<br>");
+	
+	
+	a='hello';
+	document.write("a="+a+"<br>");
+	
+	a=false;
+	document.write("a="+a+"<br>");
+	
+	//변수의 타입 확인
+	document.write("type:"+typeof a + "<br>");
+	
+	var b='10';
+	document.write("b type:"+typeof b + "<br>");
+	
+	var c=10;
+	document.write("c type:"+typeof c + "<br>");
+	document.write("b length:"+b.length+", c length :"+c.length  + "<br>");
+	
+	d=3.14;	//변수를 선언할 필요 없이 변수가 필요한 곳에서 그냥 사용해도 됨
+	document.write("d="+d+"<br>");
+	
+	var e=c+d;
+	document.write("e="+e+"<br>")
+</script>
+
+</head>
+<body>
+<h1>변수</h1>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	//$.trim(문자열)-입력 값으로 받은 문자열의 앞, 뒤 공백을 제거함
+	$(function(){
+		var str="  helloi, jquery!!  ";
+		var res="before[" + str + "]<br>";
+		res+="길이 : " + str.length +"<br><br>";
+		res+= "after["+ $.trim(str) +"]<br>"; //양쪽 공백 제거
+		res+= "trim 후 길이:" + $.trim(str).length;
+		
+		$('result').html(res);
+	});
+</script>
+</head>
+<body>
+	<div id="result"></div>
+</body>
+</html>

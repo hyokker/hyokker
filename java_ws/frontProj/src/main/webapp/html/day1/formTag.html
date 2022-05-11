@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>formTag.html</title>
+</head>
+<body>
+<h1>form 태그-클라이언트에서 입력한 정보를 서버의 특정 URL로 전달
+<!--
+	action 속성
+	사용자가 입력한 값들은 action에 지정한 서버 페이지(jsp)로 전송됨
+	
+	method 속성
+	[1] get- 사용자가 입력한 값들이 url 주소의 뒤에 붙어서 전송됨
+	보안에 취약함, 최대 2kb까지 가능
+	[2]	post- 사용자가 입력한 값들이 http 헤더안에 숨겨져서 전송됨
+	보안에 좋다, 용량제한이 없다.	
+  -->
+
+</h1>
+<form method="post" action="a.jsp">
+	<input type="text" name="search">
+	<input type="submit">
+
+</form>
+
+</body>
+</html>

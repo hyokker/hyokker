@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('tr:first').css('font-style','italic');
+		$('tr:even').css('font-size','25px');
+		$('tr:eq(1)').css('color','orange');
+		$('tr:gt(4)').css('color','blue');
+		/* 메서드 체이닝 - 메서드를 연속으로 사용
+		 jQuery가 제공하는 모든 메서드는 그 반환값이 효과가 반영된 jQuery개체이기 때문에
+		 메서드를 이어서 사용할 수가 있음*/
+		$('th:contains("제목2")').css('color','red');
+		
+	});
+</script>
+</head>
+<body>
+	<h1>filter 선택자</h1>
+	<table border="1" style="width: 400px">
+		<tr>
+			<th>제목1</th>
+			<th>제목2</th>
+		</tr>
+		
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+	</table>
+</body>
+</html>

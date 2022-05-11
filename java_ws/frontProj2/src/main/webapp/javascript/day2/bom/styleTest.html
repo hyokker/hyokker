@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function applyStyle() {
+		//var objLink = document.getElementById("a1");
+		//var objImg = document.getElementById("img1");
+		var objLink = document.links[0];
+		var objImg = document.images[0];
+		objLink.style.textDecoration = "none";
+		objLink.style.fontWeight = "bold";
+		objLink.style.backgroundColor = "#eee";
+		objLink.style.color = "gray";
+		objImg.style.borderStyle = "solid";
+		objImg.style.borderColor = "green";
+		objImg.style.borderWidth = "7px";
+		//objImg.style.border= “7px solid red";
+	}
+</script>
+</head>
+<body>
+	<a id="a1" href="http://www.naver.com">지식검색 네이버</a>
+	<br>
+	<br>
+	<img id="img1" src="../../image/1.png">
+	<br>
+	<br>
+	<input type="button" value="스타일 적용하기" onclick="applyStyle()">
+<hr>
+<TABLE width = "450" border="1">
+<TR align="center">
+<TD WIDTH=50>번호</TD>
+<TD WIDTH=200>제목</TD>
+<TD WIDTH=100>작성자</TD>
+<TD WIDTH=100>날짜</TD>
+</TR>
+<TR align="center" onMouseOver="this.style.backgroundColor='lightcyan'"
+onMouseOut="this.style.backgroundColor=''"> 
+<TD>1</TD>
+<TD>첫번째 글</TD>
+<TD>홍길동</TD>
+<TD>2009-10-20</TD>
+</TR>
+<TR align="center" onMouseOver="this.style.backgroundColor='lightcyan'"
+onMouseOut="this.style.backgroundColor=''"> 
+<TD>2</TD>
+<TD>두번째 글</TD>
+<TD>김길동</TD>
+<TD>2009-10-19</TD>
+</TR>
+</TABLE>
+<hr>
+</body>
+</html>

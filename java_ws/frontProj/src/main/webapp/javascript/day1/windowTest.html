@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	window객체의 메소드를 실행하기 전
+	<P>
+		<SCRIPT type="text/javascript">
+			window.alert("저는 alert() 메소드 입니다");
+			var b = window.prompt("저는 prompt() 메소드 입니다", "초기값");
+			var c = window.confirm("저는 confirm() 메소드 입니다");
+			document.write(b + "<BR>" + c + "<P>");
+			if (confirm("저는 confirm() 메소드 입니다"))
+				document.write("확인버튼 선택<br>");
+			else
+				document.write("취소버튼 선택<br>");
+		</SCRIPT>
+		window.method()를 실행한 이후
+</body>
+</html>

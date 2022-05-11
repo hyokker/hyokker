@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.box{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		/* z-index 값이 크면 z-index 값이 작은 요소보다 위에 쌓이게 됨 */
+	}
+	
+	.box:nth-child(1) {
+		background: red;
+		left: 10px;
+		top: 10px;
+		z-index: 100;
+		
+}
+	.box:nth-child(2) {
+		background: green;
+		left: 50px;
+		top: 50px;
+		z-index: 10;
+}
+	.box:nth-child(3) {
+		background: blue;
+		left: 90px;
+		top: 90px;
+		z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</body>
+</html>

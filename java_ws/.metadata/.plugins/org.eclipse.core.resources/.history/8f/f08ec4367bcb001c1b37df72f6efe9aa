@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#chkAll').click(function(){
+			$('#chkItem').find('[type=checkbox]')
+				.prop('checked',this.checked);
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="checkbox" id="chkAll" />
+	<label for="chkAll">All</label>
+	<div id="chkItem">
+		<input type="checkbox" id="chk1" /><label for="chk1">java</label> <input
+			type="checkbox" id="chk2" /><label for="chk2">jsp</label> <input
+			type="checkbox" id="chk3" /><label for="chk3">jquery</label>
+	</div>
+</body>
+</html>

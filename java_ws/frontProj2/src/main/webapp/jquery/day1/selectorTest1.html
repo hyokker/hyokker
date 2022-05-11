@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest1.html</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('*').css("font-size","20px"); //전체 선택자
+		$('h2').css("font-style","italic"); //태그 선택자
+		$('#header2').css('color','blue'); // 아이디 선택자
+		$('.ph').css('color','red');//클래스 선택자
+		$('span.ph').css('background','yellow');
+		$('.ph.red').css('background','cyan');
+		
+		//여러개의 태그 선택
+		$('h1, div, span').css('border', '1px solid green');
+	});
+</script>
+</head>
+<body>
+<h1>h1태그</h1>
+<h2>h2태그1</h2>
+<h2 id="header2">h2태그2</h2>
+<div>div태그</div>
+	<p class='ph'>문단1</p>
+	<p class='ph red'>문단2</p>
+	<span class='ph'>안녕</span>
+</body>
+</html>

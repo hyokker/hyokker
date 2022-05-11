@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.error {
+   color: red;
+   font-size: 0.8em;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+      $('.error').hide();
+      
+      $('.submit').click(function(){
+         var data=$('.infobox').val();
+         if(validate_tel(data)){
+            $('.error').hide();            
+         }else{
+            $('.error').show();
+            event.preventDefault();
+         }
+      });
+   });
+   
+   function validate_tel(ph){
+      var pattern=new RegExp(/^[0-9-+]*$/g);
+      return pattern.test(ph); //정규식과 일치하면 true
+   }
+   /* 정규식 /^[0-9-+]*$/g
+   0 에서 9사이의 숫자나 - 또는 + 기호로 시작하거나 끝나야 한다는 의미
+   (^는 시작, $는 끝을 의미)
+   닫기 대괄호(]) 뒤의 * 기호는 이 패턴이 0 번 이상 반복된다는 의미
+   */
+</script>
+</head>
+<body>
+   <form id="signup" method="post" action="a.jsp">
+      <div>
+         <label class="label" for="phone">전화번호</label>
+         <input type="text" class="infobox" name="phone" id="phone" />
+         <span class="error">전화번호는 숫자,+,-만을 포함할 수 있습니다.</span>
+      </div>
+      <input class="submit" type="submit" value="전송 ">
+   </form>
+</body>
+</html>

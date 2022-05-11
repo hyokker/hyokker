@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* setInterval() - 일정한 시간 간격으로 원하는 작업을 실행하고자 할 때 사용
+ 
+    TimerID = setInterval("실행할 함수", 시간)
+    
+    clearInterval(TimerID);
+    setInterval()메서드로 설정한 시간을 해제하는 기능
+ */
+  
+ 
+   var timerId;
+    
+    function displayTime(){
+       var today=new Date();
+       document.getElementById('curTime').innerHTML
+       ="<h1>"+today.getHours()+"시 "
+          + today.getMinutes() +"분 " + today.getSeconds()+"초</h1>";
+    }
+    
+    function startTime(){
+       timerId=setInterval("displayTime()", 1000);   //1초마다 displayTime()함수 실행
+    }
+    
+    function stopTime(){
+       clearInterval(timerId);
+    }
+</script>
+</head>
+<body>
+<H2> setInterval 과 clearInterval 예 </H2>
+<FORM>
+   <INPUT TYPE="button" VALUE="시간 표시" onClick="startTime()">
+   <INPUT TYPE="button" VALUE="시간 중지" onClick="stopTime()"><br><br>
+</FORM><div id="curTime"></div>
+
+</body>
+</html>

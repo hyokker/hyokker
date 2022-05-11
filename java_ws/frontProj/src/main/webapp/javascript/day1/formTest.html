@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function hamsuA() {
+		document.frm.reset();
+	}
+	function hamsuB() {
+		document.frm.submit();
+	}
+	function hamsuC() {
+		document.frm.id.select();
+	}
+	function hamsuD() {
+		document.frm.pwd.focus();
+	}
+</script>
+
+</head>
+<body>
+	<FORM name="frm" method="post" action="test.jsp">
+		아이디<INPUT type="text" name="id" size=32> <br> 비밀번호<INPUT
+			type="password" name="pwd" size=32>
+		<P>
+			<input type="button" value="폼 리셋" onclick="hamsuA();"> <input
+				type="button" value="폼 전송" onclick="hamsuB();"> <input
+				type="button" value="선택하기" onclick="hamsuC();"> <input
+				type="button" value="포커스주기" onclick="hamsuD();">
+	</FORM>
+
+</body>
+</html>

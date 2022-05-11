@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('div').css('color','blue');
+		
+    $('div[id!=selInfo]').each(function(idx, item){
+        $(item).text('div'+(idx+1)+'00');
+        $(item).css('border',(idx+1)+'px solid black'); 
+    });
+	var str="";
+	str=$('span:first').html();
+		alert(str);
+		$('span').each(function(index){
+			str= (index+1)+ "번째 태그 : " + $(this).text();
+			alert(str);
+		});
+			var result = "";
+	
+		$('input[type=button]').click(function(){
+			
+		$('select >option:selected').each(function(){
+			result += $(this).text()+"\n";	
+		$('#selInfo').html(result);
+		});	
+	});			
+});
+	
+	
+</script>
+</head>
+<body>
+	<h1>each실습</h1>
+	<div>div태그1</div>
+	<div>div태그2</div>
+	<div>div태그3</div>
+	<div>div태그4</div>
+	<br>
+	<span>span태그1</span>
+	<span>span태그1</span>
+	<span>span태그1</span>
+	<br>
+	<hr>
+	<select name='sel1' multiple="multiple">
+		<option>java</option>
+		<option>jsp</option>
+		<option>spring</option>
+		<option>oracle</option>
+	</select>
+	<input type="button" value='선택'>
+	<br>
+	<div id="selInfo"></div>
+</body>
+</html>

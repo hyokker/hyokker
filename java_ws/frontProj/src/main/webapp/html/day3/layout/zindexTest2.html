@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+   .box{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+   }
+   
+   .box:nth-child(1) {
+      background: red;
+      left: 10px;
+      top: 10px;
+      z-index: 100;
+/* z-index 값이 작을수록 아래에 쌓이고, z-index 값이크면 z-index 값이 작은 요소보다 위에 쌓이게 됨 */
+      
+   }
+   .box:nth-child(2) {
+      background: green;
+      left: 50px;
+      top: 50px;
+      z-index: 50;
+   }
+   .box:nth-child(3) {
+      background: blue;
+      left: 90px;
+      top: 90px;
+      z-index: 1;
+   }
+   body > div{
+   	width: 500px;
+   	height: 100px;
+   	border: 1px solid gray;
+   	position: relative;
+   	overflow: hidden;
+   	/*overflow 속성
+   	- 내부의 요소가 부모의 범위를 벗어날 때 어떻게 처리할지 지정하는 속성
+   	 	hidden - 초과된 내용을 숨김*/
+   }
+</style>
+</head>
+<body>
+   <h1>Lorem ipsum dolor amet</h1>
+   <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </div>
+   <h1>Lorem ipsum dolor amet</h1>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>writer.html</title>
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/writer.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+	<form action="" id="sample">
+		<fieldset>
+			<legend>글쓰기</legend>
+			<p class="firstP">
+				<label for="title" class="label"><strong>제목</strong>
+				</label><input
+					type="text" id="title" />
+			</p>
+			<p>
+				<label for="uName" class="label"><strong>작성자</strong></label><input
+					type="text" id="uName" />
+			</p>
+			<p>
+				<label for="uPass" class="label"><strong>비밀번호</strong></label><input
+					type="password" id="uPass" />
+			</p>
+			<p>
+				<label for="cPass" class="label"><strong>비밀번호확인</strong></label><input
+					type="password" id="cPass" />
+			</p>
+			<p>
+				<label for="eMail" class="label">E-mail</label><input type="text"
+					id="eMail" />
+			</p>
+			
+			<p>
+				<span class="label">내용</span>
+				<textarea cols="30" rows="10"></textarea>
+			</p>
+			<p class="submitBtn">
+				<input type="submit" value="등록" />
+				<input type="submit" value="글목록" />
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

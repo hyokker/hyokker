@@ -1,0 +1,6 @@
+package com;
+class MyTest1 {
+	public  void display() {
+		System.out.println("MyTest1 ¸Þ¼­µå");
+	}
+}

@@ -1,0 +1,189 @@
+@charset "EUC-KR";
+/* css/mystyle2.css */
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background: white;
+}
+
+body {
+	background-image: url('../image/background.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+header#topbanner {
+	background: #ebdaac;
+	background-image: url('../image/topbg3.png');
+	height: 195px;
+	background-repeat: no-repeat;
+}
+
+nav {
+	background: #C51A3A;
+	overflow: hidden;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+	margin: 0 15px;
+}
+
+nav li a, nav li a:visited {
+	color: white;
+	font-weight: 600;
+	padding: 15px 10px;
+	text-shadow: 0 0.5px 0.5px red;
+}
+
+nav ul li a:hover {
+	color: red;
+	background: white;
+	text-shadow: 0 0.5px 1px white;
+	border-radius: 10px 10px 0 0;
+}
+
+div#shop {
+	float: left;
+	width: 40%;
+	margin: 1.5%;
+}
+
+div#intro {
+	float: left;
+	width: 50%;
+	margin-top: 25px;
+	padding: 15px;
+}
+
+div#content {
+	overflow: hidden;
+}
+
+aside#customer {
+	clear: both;
+	float: left;
+	width: 23%;
+	margin-left: 1.7%;
+}
+
+section#main_section {
+	float: left;
+	width: 75%;
+}
+
+footer {
+	clear: both;
+	height: 50px;
+	border-top: 1px solid #ccc;
+}
+
+article.sub {
+	float: left;
+	width: 30.6%;
+	border: 1px dotted #9e9edd;
+	border-radius: 10px;
+	height: 200px;
+	margin-bottom: 15px;
+	margin-left: 1.9%;
+}
+
+#shop img {
+	width: 100%;;;;;;;;;;;;;
+}
+
+#intro>h1 {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 15px 0;
+}
+
+#intro p {
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: πŸ≈¡;
+	color: #ff3b00;
+}
+
+#customer h1 {
+	background: #E66C6D;
+	color: white;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+ul#contact {
+	
+}
+
+#customer ul#contact {
+	list-style: square;
+}
+
+#customer ul li {
+	line-height: 25px;
+	font-size: 0.9em;
+}
+
+article#choice1 {
+	background-image: url('../image/bg1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+article#choice2 {
+	background-image: url('../image/bg2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+article#choice3 {
+	background-image: url('../image/bg3.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.sub hgroup {
+	background: rgba(255, 255, 255, 0.6);
+	text-align: right;
+	margin-top: 120px;
+	width: 95%;
+}
+
+.sub hgroup h1 {
+	color: #936;
+	font-weight: 600;
+	font-family: πŸ≈¡;
+	font-size: 1.5em;
+}
+
+footer ul {
+	margin: 0;
+}
+
+.sub hgroup h2 {
+	color: #06f;
+	font-weight: 600;
+	font-family: πŸ≈¡;
+	font-size: 1em;
+}
+
+footer ul li a {
+	float: left;
+	font-size: 0.8em;
+	color: #222;
+	margin: 15px 5px;
+}
+
+footer p {
+	float: right;
+	color: #222;
+	font-size: 0.8em;
+	margin: 17px;
+}

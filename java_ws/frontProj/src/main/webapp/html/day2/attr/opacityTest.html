@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>opacityTest.html</title>
+<style type="text/css">
+.div2 #box {
+	background-color: black;
+	color: red;
+	opacity: 0.4;/* 약간 투명한 상태 배경색과 글씨 모두 투명하게 */
+	padding: 10px;
+}
+.div3 #box {
+	background-color: rgba(0,0,0,0.4); /* 배경만 투명하게 */
+	color: red;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="div1">
+<span>Dummy</span>
+<div id="box">
+<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+</div>
+<span>Dummy</span>
+</div>
+
+<div class="div2">
+<span>Dummy</span>
+<div id="box">
+<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+</div>
+<span>Dummy</span>
+</div>
+
+<div class="div3">
+<span>Dummy</span>
+<div id="box">
+<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+</div>
+<span>Dummy</span>
+
+</div>
+</body>
+</html>

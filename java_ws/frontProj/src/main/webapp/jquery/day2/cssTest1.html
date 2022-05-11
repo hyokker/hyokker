@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.winter {
+	border: 7px solid silver;
+}
+
+.summer {
+	border: 7px solid lightblue;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('span').css({background:'pink',color : 'blue', "font-weight":'bold'});
+	
+	
+		$('#img1').addClass('winter').css('width','200');
+		
+		$('button:eq(0)').click(function(){
+			$('#img1').toggleClass('summer');
+		});
+		$('button:eq(1)').click(function(){
+			$('#img1').removeClass('winter');
+		});
+	});
+</script>
+</head>
+<body>
+	<span>CSS 관련 메서드</span>
+	<br />
+	<br />
+	<div id="Mt">
+		<img id="img1" src="../images/magnum2.jpg" />
+	</div>
+	<button>토글</button>
+	<button>removeClass</button>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>fontTest.html</title>
+<style type="text/css">
+	.a{
+		font-size: 32px;
+	}
+	.b{
+		font-size: 2em;
+	}
+	.c{
+		font-size: 150%;
+	}
+	.d{
+		font-size: small;
+	}
+	.font_arial{
+		font-size: Arial, 굴림, 궁서, serif;
+	}
+	.font_roman{
+		font-size: 'Times New Roman', Consolas, sans-serif;
+	}
+	
+	.font_big{
+		font-size: 3em;
+	}
+	.font_italic{
+		font-size: italic;
+	}
+	.font_bold{
+		font-weight: bold;
+	}
+	.font_center {
+	 text-align: center
+	 }
+	.button {
+		width: 150px;
+		height: 70px;
+		background-color: #FF6A00;
+		border: 10px solid #FFFFFF;
+		border-radius: 30px;
+		box-shadow: 5px 5px 5px #A9A9A9;
+	}
+	.button > a {
+		display: block;
+		line-height: 70px /* 글자가 수직으로 중앙 정렬*/
+	}
+	
+</style>
+</head>
+<body>
+	<h1>Lorem ipsum</h1>
+	<p class="a">Lorem ipsum</p>
+	<p class="b">Lorem ipsum</p>
+	<p class="c">Lorem ipsum</p>
+	<p class="d">Lorem ipsum</p> 
+<hr>
+	<h1 class="font_arial">Lorem ipsum</h1>
+	<p class="font_roman b">Lorem ipsum</p>
+<hr>
+	<p class="font_big font_italic font_bold">Lorem ipsum dolor amet</p>
+<hr>
+	<div class="button">
+	<a href="#" class="b font_italic font_bold font_center">Click</a>
+</body>
+</html>

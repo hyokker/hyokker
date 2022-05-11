@@ -1,0 +1,6 @@
+package com.herb;
+public class MyHerb {
+	public  void display() {
+		System.out.println("MyHerb ¸Þ¼­µå");
+	}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var h1='<h1>제목1</h1>';
+		var h2='<h2>제목2</h2>';
+		
+		$('#p1').append(h1);
+		$('#p2').append(h1,h2);
+		
+		var arr=[
+			{name:'홍길동',id:'hong'},
+			{name:'김길동',id:'kim'},
+			{name:'이길동',id:'lee'},
+		];
+		
+/* 		$('div').append(function(idx){
+			var obj=arr[idx];
+			var str=obj.name+"- <b>" + obj.id+"</b>";
+			
+			return str;
+		}); */
+		
+		$('h3').append('<u>안녕</u>');
+		
+
+		$('div').each(function(idx, item){
+		   var obj=arr[idx];
+		   $(this).append(obj.name+ " - <b> " + obj.id + " </b>");
+	});
+	});		
+</script>
+</head>
+<body>
+	<p id="p1">p 태그입니다1.</p>
+	<p id="p2">p 태그입니다2.</p>
+	<div></div>	<div></div>	<div></div>
+	
+	<h3>h3태그</h3>
+	<h3>h3태그</h3>
+	<h3>h3태그</h3>
+</body>
+</html>

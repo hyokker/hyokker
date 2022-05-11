@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+   function rel(){
+      location.reload();
+   }
+   
+   function rep(){
+      location.replace("http://www.google.com");
+      /*replace() 메서드 – 현재 실행중인 문서의 URL에 관
+         한 히스토리를 제거하고 대체되기 때문에 back 버튼
+         을 눌러도 이전 URL로 돌아갈 수 없음
+      */
+   }
+   
+   window.onload=function(){
+      var today=new Date();
+      document.getElementById("curTime").innerHTML=today.toLocaleString();
+   }
+/*  window 객체가 로드가 완료되고 자동으로 할당한 함수를 실행함
+	window 객체가 로드가 완료되는 때
+	- HTML 페이지에 존재하는 모든 태그가 화면에 올라가는 순간이 로드가 완료되는 순간임 */
+
+</script>
+</head>
+<body>
+<H2> Location 객체 메소드 예제 </H2>
+   <FORM>
+      <INPUT TYPE="button" VALUE="문서 다시 읽기" onClick="rel()">
+      <p>
+         <INPUT TYPE="button" VALUE="구글로 이동하기" onClick="rep()">
+      <p>
+         <a href="http://naver.com">네이버로 이동</a>
+   </FORM>
+   <div id="curTime"></div>
+     </SCRIPT>
+</body>
+</html>

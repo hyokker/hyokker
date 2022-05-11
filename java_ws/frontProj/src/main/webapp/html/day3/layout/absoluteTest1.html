@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>layout/absoluteTest1.html</title>
+<style type="text/css">
+	*{
+		margin: 0;
+	}
+	div{
+		width: 150px;
+		height: 120px;
+		position: absolute;
+	}
+	
+	.box1{
+		background: orange;
+		top:30px;
+	}
+	.box2{
+		background: skyblue;
+		left:40px;
+		bottom: 20px;
+	}
+	.box3{
+		background: pink;
+		top:50%;
+		right: 0;
+	}
+</style>
+</head>
+<body>
+	<div class="box1">top:30px</div>
+	<div class="box2">left:40px;bottom:20px</div>
+	<div class="box3">right:0px top:50%</div>
+</body>
+</html>

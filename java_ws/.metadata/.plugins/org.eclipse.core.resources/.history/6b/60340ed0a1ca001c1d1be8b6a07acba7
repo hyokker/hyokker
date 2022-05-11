@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>exam2-7.html</title>
+<style type="text/css">
+body {width: 43%;}
+
+p {
+	;
+}
+
+title p {
+position: relative;
+}
+</style>
+</head>
+<body>
+<div class="title">
+	<p>많이 본 뉴스</p><p>TV연예</p>|<p>종합</p>
+	<p>더보기</p>
+	</div>
+	
+	1 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+	2 <span>[스타톡톡]최유정 김도연도..이젠 정말 굿바이 IOI</span><br>
+	3 <span>SBS "이휘재 논란 반성, 2017년 최선 다하겠다</span><br>
+	4 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+	5 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+	6 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+
+
+</body>
+</html>

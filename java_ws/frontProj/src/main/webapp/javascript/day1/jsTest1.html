@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jsTest.html</title>
+<!-- 자바스크립트 동작 방법 -->
+<!-- [1] <script> ~ </script> 태그를 이용 -->
+<script type="text/javascript">
+   document.write("<h1>script태그 내의 코드임</h1>");
+   /* document : html 문서를 의미하는 객체
+      write() : ()안의 태그를 html문서에 쓰라는 의미*/
+
+</script>
+
+<!-- [2] 외부 자바스크립트 불러오기 
+   - js 확장자를 갖는 별도의 독립된 자바 스크립트 파일을 외부에 만들어 두고,
+   이를 html문서에서 불러서 실행
+-->
+<script type="text/javascript" src="../js/test1.js" charset="utf-8"></script>
+
+</head>
+<body>
+<!-- [3] html 태그의 이벤트 핸들러를 자바 스크립트 코드로 표현하여 동작 -->
+   <h1>body태그 내부</h1>
+   <input type="button" value="배경색 변경"
+   onclick="document.bgColor='skyblue'"><br>
+   <a href="http://www.naver.com"
+      onmouseover="document.bgColor='pink'"
+      onmouseout="document.bgColor=''">naver</a><br>
+   <hr>
+   <a href="#" onclick="alert('안녕!')">메시지 띄우기</a>
+   
+   <script type="text/javascript">
+      document.write("<h3>body태그 내의 자바스크립트 코드!</h3>");
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

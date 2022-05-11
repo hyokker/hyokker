@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 60px;
+	height: 60px;
+	float: left;
+	border: 2px solid blue;
+	margin: 4px
+}
+
+.orange {
+	background: orange
+}
+
+.blue {
+	background: blue
+}
+
+.pink {
+	background: pink
+}
+h3{
+	clear:both;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('div').eq(1).css('color', 'red');
+		
+		$('div').filter(':odd')
+			.eq(0).addClass('pink')
+			.end()
+			.eq(1).addClass('orange')
+			.end()
+			.css('border-width','5px');
+		
+		$('div').not(':odd').eq(1).css('color','green');
+		
+		var $myDiv = $('div').eq(5);
+		if($myDiv.is('div')){
+			$myDiv.css('color','red').css('font-width','bold');
+			
+		}
+		if($myDiv.is('.blue, .orange, .pink')){
+			$myDiv.text('마이칼라');
+		}
+		
+		$('div').first().css('background','cyan');
+		
+		$('h3').filter(function(idx){
+			return idx%3==0;
+		}).css({background:'black', color :'white' });
+	});
+</script>
+</head>
+<body>
+	<div>a</div>
+	<div>b</div>
+	<div>c</div>
+	<div>d</div>
+	<div>e</div>
+	<div class="orange">f</div>
+	<div>g</div>
+	<hr>
+	
+	<h3>Header -0</h3>
+	<h3>Header -1</h3>
+	<h3>Header -2</h3>
+	<h3>Header -3</h3>
+	<h3>Header -4</h3>
+	<h3>Header -5</h3>
+
+</body>
+</html>

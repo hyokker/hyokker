@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('label+input').css('border','1px solid blue');//바로 다음에 나오는 형제
+		$('div.start ~ div').css('background','cyan');//다음에 나오는 모든 형제
+	});
+
+</script>
+</head>
+<body>
+	<div>
+		<label>이름 : </label><input type="text">
+	</div>
+	<div class="start">
+		<label>아이디 : </label><input type="text">
+	</div>
+	<div>
+		<span>비밀번호 : </span><input type="text">
+	</div>
+	<p>
+		<label>주소 : </label><input type="text">
+	</p>
+	<div>
+		<label>전화번호 : </label><input type="text">
+	</div>
+</body>
+</html>

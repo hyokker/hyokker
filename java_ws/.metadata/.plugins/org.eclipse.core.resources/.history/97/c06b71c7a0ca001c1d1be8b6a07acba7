@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>exam2-7.html</title>
+</head>
+<body>
+<div class="title">
+	<p>많이 본 뉴스</p><span>TV연예</span>|<span>종합</span>
+	<label>더보기</label>
+</div>
+</body>
+</html>

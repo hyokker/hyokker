@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+		/* [2] $(selector).each(function(index, item){});
+			each - 선택자로 선택된 여러 개 요소들을 개별적으로 처리할 때 사용
+		
+		*/
+	$(document).ready(function(){
+		$('div').css('background','pink'); //모든 div태그에 동일한 스타일 적용
+		
+		$('p').each(function(idx,item){
+			$(item).css('font-size',(idx+1)*10);//p태그 각각에 서로 다른 스타일 적용
+			//$(this).css('font-size'),(idx+1)*10);
+		});
+		
+	});
+</script>
+</head>
+<body>
+<p>문단1</p>
+<p>문단2</p>
+<p>문단3</p>
+
+<div>div태그 1</div>
+<div>div태그 2</div>
+<div>div태그 3</div>
+</body>
+</html>

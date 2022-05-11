@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.error {
+   color: red;
+   font-size: 0.8em;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+      $('.error').hide();
+      
+      $('.submit').click(function(){
+         var data=$('.infobox').val();
+         if(validate_userid(data)){
+            $('.error').hide();            
+         }else{
+            $('.error').show();
+            event.preventDefault();
+         }
+      });
+   });
+   
+   function validate_userid(id){
+      var pattern=new RegExp(/^[a-zA-Z0-9_]+$/g);
+      return pattern.test(id);
+   }
+   
+   /* a에서 z 사이의 문자, A에서 Z사이의 문자, 0에서 9사이의 숫자나 _로
+      시작하거나 끝나야 한다는 의미
+      닫기 대괄호(]) 뒤의 + 기호는 이 패턴이 한 번 또는 그 이상 반복된다는 의미
+   */
+   
+</script>
+</head>
+<body>
+   <form id="signup" method="post" action="a.jsp">
+      <div>
+         <label class="label" for="userid">아이디</label>
+         <input type="text" class="infobox" name="userid" id="userid" />
+         <span class="error">아이디는 문자,숫자,_(밑줄문자)만을 포함할 수 있습니다.</span>
+      </div>
+      <input class="submit" type="submit" value="전송 ">
+   </form>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	margin: 10px auto;
+	text-align: center;
+}
+header{
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+
+section{
+	text-align: center;
+}
+table{
+	margin: auto;
+	width: 700px;
+	height: 200px;
+	border-collapse: collapse;
+}
+.t1{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top : 5px;
+		border: 3px solid black;
+}
+.t2{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top : 5px;
+		border: 3px solid black;
+}
+.t3{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top : 5px;
+		border: 3px solid black;
+}	
+.t1 tr td{
+	border: 1px solid black;
+}
+.t2 tr td{
+	border: 1px solid black;
+}
+.t3 tr td{
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<header>
+	<h2 class="title" style="font-weight: bold">경력 기술서</h2>
+</header>
+<section>
+	<div class="first">
+	<table class="t1">
+	<tr>
+		<td width="150px">회&nbsp;사&nbsp;명</td>
+		<td>&nbsp;&nbsp;</td>
+		<td width="150px">주&nbsp;요&nbsp;사&nbsp;업</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>근무기간</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>근무부서/학력</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>주요업무</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4">업무상세내용&nbsp;및&nbsp;주요성과</td>
+	</tr>
+	<tr width="100%" height="150px">
+		
+	</tr>
+		
+	</table>
+	<div class="second">
+	<table class="t2">
+	<tr>
+		<td width="150px">회&nbsp;사&nbsp;명</td>
+		<td>&nbsp;&nbsp;</td>
+		<td width="150px">주&nbsp;요&nbsp;사&nbsp;업</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>근무기간</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>근무부서/학력</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>주요업무</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4">업무상세내용&nbsp;및&nbsp;주요성과</td>
+	</tr>
+	<tr width="100%" height="150px">
+		
+	</tr>
+		
+	</table>
+	<div class="third">
+	<table class="t3">
+	<tr>
+		<td width="150px">회&nbsp;사&nbsp;명</td>
+		<td>&nbsp;&nbsp;</td>
+		<td width="150px">주&nbsp;요&nbsp;사&nbsp;업</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>근무기간</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>근무부서/학력</td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>주요업무</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4">업무상세내용&nbsp;및&nbsp;주요성과</td>
+	</tr>
+	<tr width="100%" height="150px">
+		
+	</tr>
+		
+	</table>
+	</div>
+
+</section>
+</body>
+</html>

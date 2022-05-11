@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>forTest.html</title>
+</head>
+<body>
+	<h1>반복문 연습</h1>
+	<script type="text/javascript">
+		//1.for
+		for(var i=0;i<3;i++){
+			console.log("i="+i);
+		}
+		
+		//2.forEach
+		var arr=[10,20,30]; //배열
+		arr.forEach(function(value, index){
+			console.log('array index:'+index+", value:"+value);
+		});
+		
+		//3.for in - 배열과 객체에 모두 사용할 수 있는 반복
+		var arr2=[100,200,300];
+		
+		var obj={
+				num:10,
+				str:'hi',
+				arr:[]
+		}; //객체
+		
+		for(var idx in arr2){
+			console.log(arr2[idx]);
+		}
+		
+		for(var key in obj){
+			console.log(obj[key]);
+		}
+	</script>
+
+</body>
+</html>

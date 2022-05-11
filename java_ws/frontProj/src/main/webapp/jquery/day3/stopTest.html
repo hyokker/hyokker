@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div, a {
+	padding: 10px;
+	border: 1px solid gray;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('a').click(function(){
+			$(this).css('background','pink');
+			event.stopPropagation();
+			event.preventDefault();
+
+		});
+		/* event.preventDefault()
+		- a태그를 클릭하면 무조건 기본 이벤트가 실행되어
+		페이지가 이동하므로 a 태그의 기본 이벤트 제거
+ 		
+		a 태그를 클릭하면 a 태그 이외에도 div 태그에 이벤트 전달이 일어남 (이벤트 버블링)
+		이벤트 전달을 막으려면 stopPropagation() 메서드 사용
+
+		*/
+		
+		$('div').click(function(){
+			$(this).css('background','skyblue');
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<div>
+		<a href="http://www.naver.com">naver</a>
+	</div>
+</body>
+</html>

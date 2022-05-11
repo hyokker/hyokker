@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#btn').on('click', function() {
+			alert('버튼 클릭!');
+		});
+
+		$('#btn').trigger('click');
+
+		$('#img1').one('click', function() {
+			alert('이미지는 한번만 클릭하세요');
+		});
+		
+		$('p').hover(function(){
+			$(this).css('background','pink');
+		}, function(){
+			$(this).css('background','');
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="my">
+		<input type="button" id="btn" value="버튼"> <img id="img1"
+			src='../images/dog.jpg'>
+	</div>
+	<hr>
+	<p>Hello JQuery</p>
+	<p>안녕</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ArrayTest1.html</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("hi<br>");
+		
+		with(document){
+			write("hello<br>");
+			write("안녕!<br>");
+		}
+		
+		var arr=new Array(3);
+		arr[0]="red";
+		arr[1]="blue";
+		arr[2]="green";
+		
+		for(var i=0;i<arr.length;i++){
+			document.write("i="+i+", "+arr[i]+"<br>");
+		}
+		
+		var numArr=[11,22,33];
+		for(var i=0;i<numArr.length;i++){
+			document.write(numArr[i]+"<br>");
+			
+		}
+	</script>
+</body>
+</html>

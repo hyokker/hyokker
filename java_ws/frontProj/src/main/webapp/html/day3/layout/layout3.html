@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap{
+		width:600px;
+		margin: 0 auto;
+	}
+	#header{
+		background: green;
+		height: 50px;
+	}
+	#container{
+	 position: relative;
+	}
+	#leftCon{
+		background: yellow;
+		width:33%;
+		height:150px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#centerCon{
+		background: pink;
+		width:31%;
+		margin: 0 0 0 33%;
+	}
+	#rightCon{
+		background: skyblue;
+		width:33%;
+		height:150px;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	#footer{
+		background: red;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">header</div>
+		<div id="container">
+			<div id="leftCon">leftCon</div>
+			<div id="centerCon">
+				centerCon<br /> centerCon<br /> centerCon<br />centerCon<br />
+				centerCon<br />centerCon<br /> centerCon<br />centerCon<br />
+				centerCon centerCon centerCon centerCon centerCon centerCon
+				centerCon centerCon centerCon
+			</div>
+			<div id="rightCon">rightCon</div>
+		</div>
+		<div id="footer">footer</div>
+	</div>
+</body>
+</html>

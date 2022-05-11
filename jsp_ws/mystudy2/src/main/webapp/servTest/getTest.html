@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>getTest.html</title>
+</head>
+<body>
+	<!--GET방식으로 데이터 전송
+사용자가 입력한 데이터는 action에 지정된 GetServlet이라는 서블릿 페이지로 전달됨-->
+<!--http://localhost:9090/mystudy2/GetServ?id=hong&pwd=12
+/mystudy2/GetServ?id=hong&pwd=12
+
+-->
+
+	<form action="/mystudy2/GetServ" method="GET" >
+		아이디: <INPUT TYPE="text" NAME="id"><br>
+		비밀번호:<INPUT TYPE="password" NAME="pwd"><br>
+		<INPUT TYPE="submit"value="로그인">
+		<INPUT TYPE="reset" value="취소">
+	</form>
+</body>
+</html>

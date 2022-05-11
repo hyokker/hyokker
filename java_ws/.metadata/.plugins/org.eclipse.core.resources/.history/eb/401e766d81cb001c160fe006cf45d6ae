@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>UI테스트(짝수형)</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="answer.js"></script>
+<link rel="stylesheet" href="jqtest.css">
+<script type="text/javascript">
+//함수명은 반드시 지켜주세요.
+//body에 있는 내용은 수정하지 않습니다.
+
+</script>
+</head>
+<body>
+<h2>jQuery Test</h2>
+
+<fieldset>
+	<legend>2.#target02의 자식인 span 태그 안의 글을 변경하세요.</legend>
+	<button onclick="target02()">target02</button>
+	<div id="target02">
+	<i>#target02</i><br/><br/><br/><br/>
+		<span>나를 바꿔봐</span>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>4.아래의 target04 중에 두번째의 .target04의 배경색을 변경하세요.</legend>
+	<button onclick="target04()">target04</button>
+	<div id="parentdiv"><i>.target04</i>
+		<div class="target04">.target04</div>
+		<div class="target04">.target04</div>
+		<div class="target04">.target04</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>6.체크된 체크박스를 모두 풀어주세요.</legend>
+	<button onclick="target06()">target06</button>
+	<div class="target06"><i>.target06</i><br/>
+		<input type="checkbox" value="1" checked="checked"/>uncheck!<br/>
+		<input type="checkbox" value="2" checked="checked"/>uncheck!<br/>
+		<input type="checkbox" value="3" checked="checked"/>uncheck!<br/>
+		<input type="checkbox" value="4" checked="checked"/>uncheck!
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>8.다음의 옵션중 second option을 선택하세요.</legend>
+	<button onclick="target08()">target08</button>
+	<div class="target08"><i>.target08</i><br/>
+		<select multiple="multiple">
+			<option>first</option>
+			<option>second(select me!)</option>
+			<option>third</option>
+		</select>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>10.#target10의 select option의 홀수(odd)만 배경색을 주세요. </legend>
+	<button onclick="target10()">target10</button>
+	<div id="target10">
+		<i>#target10</i>
+		<select multiple="multiple">
+			<option>option1(odd)</option>
+			<option>option2(even)</option>
+			<option>option3(odd)</option>
+			<option>option4(even)</option>
+		</select>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>12.div태그 중에 자식 노드를 갖지 않는 모든 div를 삭제하세요.</legend>
+	<button onclick="target12()">target12</button>
+	<div class="target12"><span>span1</span></div><br/>
+	<div class="target12"></div><br/>
+	<div class="target12"><span>span2</span></div><br/>
+	<div class="target12"></div>
+</fieldset>
+
+<fieldset>
+	<legend>14.table에 row1(첫번째 tr)과 row2(두번째 tr)의 위치를 바꾸시오.</legend>
+	<button onclick="target14()">target14</button>
+	<div id="target14"><i>#target14</i>
+		<table>
+			<tr><td>ROW1</td><td>Let me down!</td></tr>
+			<tr><td>ROW2</td><td>Let me up!</td></tr>
+		</table>
+	</div>
+</fieldset>
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest2.html</title>
+<style type="text/css">
+	/*여러 개의 선택자를 한꺼번에 선택 : 쉼표를 사용*/
+	h1,p{
+		color:blue;
+	}
+	
+	/* 아이디 선택자 : #아이디 => 아이디 속성을 가지고 있는 태그를 선택함 */
+	#header{
+		width: 300px;
+		background: pink;
+	}
+	
+	/* 클래스 선택자 : .클래스 => 특정한 클래스를 가지고 있는 태그를 선택함*/
+	.select{
+		color:red;
+	}
+</style>
+</head>
+<body>
+	<h1>제목입니다</h1>
+	<p>문단1</p>
+	<div id="header">
+		<h1>Header</h1>
+	</div>
+	<ul>
+		<li class="select">Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li class="select">Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+	</ul>
+</body>
+</html>

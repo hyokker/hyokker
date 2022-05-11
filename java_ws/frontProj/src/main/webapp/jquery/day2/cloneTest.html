@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+   font-size: 12px;
+   font-family: 돋움;
+}
+
+.annotation {
+   background: pink;
+}
+
+b {
+   color: green
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('.annotation').each(function(idx, item){
+         $(this).after("<sup>"+(idx+1)+"</sup>");
+      });
+      
+      $('button').click(function(){
+         alert($(this).text());
+         
+         $(this).remove();
+      });
+      
+      var $prev=$("#prevBtn").clone();
+      var $next=$("#nextBtn").clone(true);
+      
+      $('#bottomDiv').prepend($prev);
+      $('#bottomDiv').append($next);
+   });   
+   
+</script>
+</head>
+<body>
+   <button id="prevBtn">이전 페이지로</button>
+   <button id="nextBtn">다음 페이지로</button>
+   <h3>jQuery란?</h3>
+   <div>
+      <b>jQuery</b>는 가볍고 빠르며, 간결한 <span class="annotation">오픈소스</span> 스크립트
+      라이브러리입니다. 이를 이용하면 Rich 웹 UI를 개발하는 데 도움이 되는 다양한 기능들 즉, HTML 문서 <span
+         class="annotation">트래버스</span>, 이벤트 처리, 애니메이션, <span
+         class="annotation">Ajax</span> 상호 작용 등을 지원하여 빠르고 견고하게 리치 웹 애플리케이션 개발을
+      할 수 있도록 지원합니다.
+   </div>
+   <br />
+   <div id="bottomDiv"></div>
+   <hr />
+   div태그 :
+   <div id="div1">
+      <b>empty 연습</b>
+   </div>
+</body>
+</html>

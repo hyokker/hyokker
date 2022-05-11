@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+   table{
+      border: 1px solid gray;
+      border-collapse: collapse;
+      width: 500px;
+      height: 80px;
+      margin-top: 10px;
+   }
+	th,td{
+		border: 1px solid gray;
+	}
+	th{
+	background: lime;
+	}
+</style>
+</head>
+<body>
+	<h1 id="title">우편번호 검색</h1>
+	<br>
+	<p>찾고 싶으신 주소의 동(읍,면)을 입력하세요.</p>
+	
+	<label>지역명 <input type="text" id="zipcode"></label>
+	<input type="button" id="search" value="찾기">
+	<br>
+	<br>
+	
+	<table>
+		<tr class="tt">
+			<th>우편번호</th>
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 658-17</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 658-18 ~ 659-14</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 659-15</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		<tr>
+			<td>06136</td>
+			<td>서울특별시 강남구 역삼동 657-1 ~ 658-16</td>
+		</tr>
+		
+		
+	</table>
+	
+</body>
+</html>

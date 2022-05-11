@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function send(){
+		if(document.frm1.title.value==''){
+			alert('제목 입력!');
+			document.frm1.title.focus();
+			return false;
+		}else if(document.frm1.name.value.length==0){
+			alert('이름 입력!');
+			document.frm1.name.focus();
+			return false;
+		}else if(!document.frm1.pwd.value){
+			alert('비밀번호 입력!');
+			document.frm1.pwd.focus();
+			return false;
+		}
+		return true //작성한 폼양식을 서버로 전송
+	}
+	
+	function send2(myForm){
+		if(myForm.title.value==''){
+			alert('제목 입력!');
+			myForm.title.focus();
+			return false;
+		}else if(myForm.name.value.length==0){
+			alert('이름 입력!');
+			myForm.name.focus();
+			return false;
+		}else if(!myForm.pwd.value){
+			alert('비밀번호 입력!');
+			myForm.pwd.focus();
+			return false;
+		}
+		return true //작성한 폼양식을 서버로 전송
+	}
+</script>
+</head>
+<body>
+	<form name="frm1" method="post" action="test01.jsp"
+		onsubmit="return send2(this);">
+		<!-- 이벤트 핸들러의 반환값 - true, false
+			-true 가 반환되면 그 이후의 행동을 계속함.
+			-false가 반환되면 더이상 작업을 진행하지 않음 -->
+		<table width="500" class="box3">
+			<tr>
+				<th width="100">제목</th>
+				<td width="400"><input type="text" name="title"></td>
+			</tr>
+			<tr>
+				<th>작성자</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td><input type="password" name="pwd"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" value="등록">
+					&nbsp; <input type="Button" value="글목록"
+					OnClick="location.href='list.html'" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

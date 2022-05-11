@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div {
+	width: 120px;
+	height: 32px;
+	border: 1px solid gray;
+	text-align: center;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('img:first').show(3000);
+
+		$('#btn1').click(function() {
+			$('img:eq(1)').show(2000, function() {
+				alert('show annimation complete!');
+			});
+		});
+		$('#btn2').click(function() {
+			$('img:eq(1)').hide(2000, function() {
+				alert('hide annimation complete!');
+			});
+		});
+		
+		$('button:eq(0)').click(function(){
+			$('img:gt(1)').toggle();
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<img src="../images/jQuery.jpg" style="display: none"
+			alt="Hello, jQuery!">
+	</div>
+	<br />
+	<input id="btn1" type="button" value="보이기" />
+	<input id="btn2" type="button" value="숨기기" />
+	<br />
+	<br />
+	<img src="../images/dog.jpg" style="display: none" alt="강아지 이미지">
+
+	<hr>
+	<button>Toggle</button>
+	<p>
+		<img src="../images/jQuery.jpg" alt="Hello, jQuery!">
+	</p>
+	<p>
+		<img src="../images/wood.JPG" alt="Hi~~" style="display: none">
+	</p>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+@charset "EUC-KR";
+/* css/layout1.css */
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+header {
+	height: 150px;
+	width: 100%;
+	background: #f46075;
+	background-image: url(../image/nav2.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	overflow: hidden;
+}
+
+header nav {
+	float: left;
+	width: 70%;
+	margin-top: 50px;
+}
+
+header nav li {
+	float: left;
+	font-weight: bold;
+	margin: 16px;
+}
+
+header nav li a {
+	color: white;
+	font-weight: bold;
+}
+
+header nav ul {
+	overflow: hidden;
+}
+
+footer {
+	width: 100%;
+	background: #333;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	padding: 25px;
+}
+
+p {
+	
+}
+
+section {
+	width: 580px;
+	float: left;
+	overflow: hidden;
+	padding: 5px;
+}
+
+aside {
+	float: right;
+	width: 200px;
+	background: #fdfd87;
+	border: 1px solid darkgoldenrod;
+	text-align: center;
+	margin-top: 77px;
+}
+
+div#content {
+	overflow: hidden;
+}
+
+article {
+	width: 250px;
+	float: left;
+	border: 1px solid #ccc;
+	height: 220px;
+	padding: 10px;
+	margin: 5px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.0em;
+}
+
+article p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+article.bg1 {
+	background: #8ef17c59;
+}
+
+article.bg2 {
+	background: #a0daf5;
+}
+
+article.bg3 {
+	background: #d1c0f5;
+}
+
+article.bg4 {
+	background: #f9c998;
+}

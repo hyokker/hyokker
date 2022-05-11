@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+div{width:60px;height:60px;float:left;
+margin:7px;border:1px solid blue;
+padding:7px}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/*find()
+		-검색된 결과 집합에서 찾는 것이 아니라, 결과 집합 내의 각 요소의 
+		"자식"에게서 찾는 것 	*/
+		
+		$('div').eq(1)
+			.siblings().css('border-width','3px')//자신을 제외한 형제 요소들
+			.end() //eq(1)로 돌아가기
+			.next().css('background','cyan')//바로 다음 형제 요소
+			.end()
+			.nextAll().css('color','red');//다음에 오는 모든 요소
+			
+		//div의 자식에서 p를 찾아 테두리 주고, span도 검색결과에 추가하여 노랑배경색 주기
+		$('div').find('p').css('border','1px solid red')
+			.add('span').css('background','yellow');
+			
+		$('div p, span').css('background','yellow');
+		$('span').parent().css('font-size','2em');
+	});
+</script>
+</head>
+<body>
+	<div>
+		A
+		<p>p a</p>
+	</div>
+	<div>
+		B
+		<p>p b</p>
+	</div>
+	<div>
+		C
+		<p>p c</p>
+	</div>
+	<div>
+		D <br />
+		<span>span d</span>
+	</div>
+	<div>
+		E <br />
+		<span>span e</span>
+	</div>
+</body>
+</html>

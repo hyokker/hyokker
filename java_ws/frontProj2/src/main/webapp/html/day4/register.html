@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>register.html</title>
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/register.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+	<form action="" id="sample">
+		<fieldset>
+			<legend>회원가입</legend>
+			<strong class="notice">붉은색 강조 문항은 필수 입력 문항입니다.</strong>
+			<p class="firstP">
+				<label for="uName" class="label"><strong>이 름</strong>
+				</label><input
+					type="text" id="uName" />
+			</p>
+			<p>
+				<label for="uId" class="label"><strong>아이디</strong></label><input
+					type="text" id="uId" />
+			</p>
+			<p>
+				<label for="uPass" class="label"><strong>비밀번호</strong></label><input
+					type="password" id="uPass" />
+			</p>
+			<p>
+				<label for="cPass" class="label"><strong>비밀번호확인</strong></label><input
+					type="password" id="cPass" />
+			</p>
+			<p>
+				<label for="eMail" class="label">E-mail</label><input type="text"
+					id="eMail" />
+			</p>
+			
+			<p>
+				<span class="label">해당 직군</span> <label><input type="radio"
+					name="motive" /> 디자이너</label> <label><input type="radio"
+					name="motive" /> 퍼블리셔</label> <label><input type="radio"
+					name="motive" /> 프로그래머</label> <label><input type="radio"
+					name="motive" /> 기획자</label>
+			</p>
+			<p>
+				<span class="label">인사말</span>
+				<textarea cols="30" rows="10"></textarea>
+			</p>
+			<p class="submitBtn">
+				<input type="submit" value="등록" />
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+   /* 동위 선택자
+      선택자A + 선택자B : 선택자A 바로 뒤에 위치하는 선택자B를 선택함
+      선택자A ~ 선택자B : 선택자A 뒤에 위치하는 선택자B를 선택함 
+      */
+   h1+h2 {
+      color: red;
+   }
+   
+   h1 ~ h2 {
+      background: orange;
+   }
+   
+   /* 반응선택자
+         :active => 사용자가 마우스를 클릭한 태그를 선택함
+         :hover => 사용자가 마우스를 올린 태그를 선택함
+       */
+   h1:hover {
+      color: blue;
+   }
+   
+   h1:active {
+      background: yellow;
+   }
+   
+   /* 상태선택자 
+   :checked  => 체크 상태의 input 태그를 선택함
+   :focus    => 초점이 맞추어진 input 태그를 선택함
+   :enabled  => 사용 가능한 input 태그를 선택함
+   :disabled => 사용 불가능한 input 태그를 선택함
+   */
+   input:enabled {
+      background: yellow;
+   }
+   input:desabled {
+      background: gray;
+   }
+   input:focus {
+      background: skyblue;
+   }
+   
+   input[type=checkbox]:checked + div {
+      background: pink;
+   }
+   
+   div{
+      width: 550px; height: 100px
+   }
+</style>
+</head>
+<body>
+   <h1>Header - 1</h1>
+   <h2>Header - 2</h2>
+   <h2>Header - 2</h2>
+   <h2>Header - 2</h2>
+   <h2>Header - 2</h2>
+
+   <h1>User Action Selector</h1>
+
+   <h2>Enabled</h2>
+   <input />
+   <h2>Disabled</h2>
+   <input disabled="disabled" /><br>
+   <hr>
+   <input type="checkbox" />
+   <div>
+      <h1>Lorem ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var userAgent=navigator.userAgent;
+		var ua=userAgent.toLowerCase();
+		
+		console.log(ua);
+		
+		document.getElementById("info").innerHTML=ua;
+		
+		if(ua.indexOf("trident")!=-1){
+			alert("Explore!!");
+		}else{
+			alert("그 외 브라우저!!");			
+		}
+	}
+</script>
+</head>
+<body>
+<h1>브라우저 판별</h1>
+<div id="info"></div>
+</body>
+</html>

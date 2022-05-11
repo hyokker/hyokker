@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>배열</h1>
+		<script type="text/javascript">
+		/* 배열을 조작할 때 주로 사용하는 API
+		 push() : 배열에 데이터 추가 (맨 끝 인덱스부터 추가됨)
+		 slice() : 배열의 특정 인덱스에 있는 값을 반환 (배열의 내용이변환되지 않음)
+		 splice() : 배열의 특정 인덱스에 있는 값을 변경 또는 삭제 (배열의 내용이 변경됨)
+		 pop() : 배열의 마지막 인덱스의 값을 꺼냄 (배열의 내용이 변경됨)
+		 shift() : 배열의 첫번째 인덱스의 값을 꺼냄 (배열의 내용이 변경됨) */
+		
+			var arr=[];
+			arr.push(100);
+			arr.push(20);
+			console.log(arr);
+			
+			arr.splice(0,1,10); //index 0에서 1개 삭제하고 그자리에 10을 추가
+			console.log(arr); // [10,20]
+			
+			arr.push(30);
+			var arr2=arr.slice(0,2);
+			
+			/* .slice(start, end)
+			-시작점(0)부터 end 바로 전까지 반환한다 */
+			console.log(arr); // [10,20,30]
+			console.log(arr2); // [10,20]
+			
+			var el=arr.pop();
+			console.log(el); //30
+			console.log(arr); //[10,20]
+			
+			el=arr.shift();
+				console.log(el); //10
+				console.log(arr); //[20]
+			
+			
+		</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>exam2-7.html</title>
+<style type="text/css">
+body {
+	width: 43%;
+}
+
+.tt {
+	width: 132px;
+	margin-top: 82px;
+	margin-left: 8px;
+	color: pink;
+	position: absolute;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+span.more {
+	position: absolute;
+	margin-left: 320px;
+	margin-top: 86px;
+}
+
+title p {
+	position: absolute;
+	margin-left: 100px;
+}
+
+section.section {
+	position: absolute;
+	margin-top: 112px;
+}
+
+span {
+	position: relative;
+	float: left;
+	margin-left: -4px;
+}
+
+p.po {
+	position: relative;
+	margin-left: 315px;
+}
+
+p {
+	margin-top: 78px;
+	font-weight: bold;
+	font-size: 1.5em;
+	position: absolute;
+	display: inline-block;
+}
+
+.title {
+	position: absolute;
+}
+</style>
+</head>
+<body>
+	<div class="title">
+		<p>많이 본 뉴스</p>
+		<span class="tt">TV연예|종합</span> <span class="more">더보기</span>
+	</div>
+
+	<section class="section">
+		1 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br> 2 <span>[스타톡톡]최유정
+			김도연도..이젠 정말 굿바이 IOI</span><br> 3 <span>SBS "이휘재 논란 반성, 2017년 최선
+			다하겠다</span><br> 4 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+		5 <span>'진행 논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br> 6 <span>'진행
+			논란' 이휘재 수난 계속...부인 SNS까지 공격</span><br>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var divEls = document.getElementsByTagName("div");
+		for(var i=0;i<divEls.length;i++){
+			divEls[i].onclick=function(){
+				this.style.display="none";
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<div>1. 클릭하면 사라짐</div>
+	<div>2. 클릭하면 사라짐</div>
+	<div>3. 클릭하면 사라짐</div>
+</body>
+</html>

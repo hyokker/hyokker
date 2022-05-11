@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bool=true;
+		$('.message').hide();
+		
+		$('.more').click(function(){
+			$('.message').slideToggle(1000);
+			
+			if(bool){
+				$(this).text('안녕하세요 less..');
+				//bool=false;
+			}else{
+				$(this).text('안녕하세요 more..');
+				//bool=true;
+			}
+			bool=!bool;
+		});
+		$('message').click(function(){
+			$(this).fadeOut(1000);
+			$(this).fadeIn(1000);
+		})
+	})
+</script>
+</head>
+<body>
+	<span class="more">안녕하세요 more..</span>
+	<div class='message'>여기는 본문입니다.</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Information(idx) {
+		str = "문서내 이미지 개수:" + document.images.length + "\n";
+		str += "이름 : " + document.images[idx].name + "\n";
+		str += "파일 이름 : " + document.images[idx].src + "\n";
+		str += "테두리 두께 : " + document.images[idx].border + "\n";
+		str += "가로 길이 : " + document.images[idx].width + "\n";
+		if (idx == 0) {
+			str += "세로 길이 : " + document.dog1.height + "\n";
+		} else if (idx == 1) {
+			str += "세로 길이 : " + document.getElementById("dog2").height + "\n";
+		}
+		alert(str)
+	}
+</script>
+</head>
+<body>
+	<H1>Image 객체 예제</H1>
+	<IMG NAME="dog1" id="dog1" SRC="../../image/1.png" BORDER=1>
+	<IMG NAME="dog2" id="dog2" SRC="../../image/2.png" BORDER=5>
+	<P>다음 단추를 누르면 그림의 정보가 출력됩니다.
+	<P>
+	<FORM>
+		<INPUT TYPE="button" VALUE="왼쪽이미지 정보" onClick="Information(0)">
+		<INPUT TYPE="button" VALUE="오른쪽이미지 정보" onClick="Information(1)">
+	</FORM>
+</body>
+</html>

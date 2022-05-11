@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		// 문자열을 생성합니다.
+		var willEval = '';
+		willEval += 'var number = 10;';
+		willEval += 'alert(number);';
+		// eval() 함수를 호출합니다. //eval() 함수는 문자열을 자바스크립트 코드로 실행하는 함수
+
+		eval(willEval);
+		// eval() 함수로 호출한 코드의 변수를 사용합니다.
+		alert("number"+number);
+		//
+		f_count = "25+6*10";
+		document.write(f_count + " 의 계산결과는 " + f_count + " 입니다<br>");
+		document.write(f_count + " 의 계산결과는 " + eval(f_count) + " 입니다<p>");
+		f_count1 = "'document.myForm.id'+'.value'";
+		document.write("eval()함수를 사용한 경우 : " + eval(f_count1) + "<br>");
+		document.write("eval()함수를 사용하지 않은 경우 : " + f_count1 + "<br>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('b.link').append('(클릭 append)');
+		$('b.link').after('[클릭 AFTER]');
+		
+		$('#sp2').prepend('(앞에 prepend)');
+		$('#sp2').before('[앞에 BEFORE]');
+		
+		$('#linkText').appendTo('p.link');
+		$('<i>(내부 뒤에 추가)</i>').appendTo('h1');
+		
+		$('p').before('<u>[p앞에 BEFORE]</u>');
+		$('p').prepend('<u>[p앞에 prepend]</u>');
+		
+		$('p').css('background','pink');
+		
+	});
+</script>
+</head>
+<body>
+	<b class="link">굵은 글자임</b>
+	<br />
+	<span id="linkText">[스팬 태그입니다]</span>
+	<br />
+	<span id="sp2" style="color: Blue">[조작메서드 연습]</span>
+	<br />
+	<p>p태그1</p>
+	<p class="link">p태그2</p>
+	<h1>h1태그</h1>
+
+</body>
+</html>

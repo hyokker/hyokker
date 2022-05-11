@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert($('p').html()); //첫번째 요소의 값만 읽어옴
+		
+		//선택된 요소들 각각의 값을 모두 읽어올 때 each 이용
+		var str="";
+		$('p').each(function(idx,item){
+			str += idx + "번째 p태그 값 : " + $(this).html() + "\n"
+			//str += idx + "번째 p태그 값 : " + $(item).html() + "\n"
+		});
+		
+		alert(str);
+	});
+</script>
+</head>
+<body>
+	<p>one</p>
+	<div>
+		<p>two</p>
+	</div>
+	<p>three</p>
+</body>
+</html>

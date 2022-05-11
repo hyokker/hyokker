@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('#btn1').click(function(){
+		var str=" ";
+		str+=$('#txt1').val()+"<br>";
+     	str+=$('#rdGp1>input:checked').val()+"<br>";
+      	$('input[type=checkbox]:checked').each(function(){
+      		str += $(this).next().text() + "\n";
+      	});
+      		str+= "<br>"+$('#sel1 > option:selected').text()+"<br>";
+     		str+= $('#txtA1').val();
+      
+         $('#divResult').html(str);
+      });
+   });
+</script>
+</head>
+<body>
+   <form action="a.jsp" method="post">
+      <div>
+         <label>Text:</label> <input type="text" id="txt1"
+            name="someTextField" />
+      </div>
+      <div id="rdGp1">
+         <label>Radio group:</label> <input type="radio" name="rdAapha"
+            id="rdA" value="A" /> A <input type="radio" name="rdAapha" id="rdB"
+            value="B" /> B <input type="radio" name="rdAapha" id="rdC"
+            value="C" /> C
+      </div>
+
+
+ <!--      <div id="rdGp2">
+         <label>Radio group2:</label> <input type="radio" name="rdAapha2"
+            id="rd1" value="A2" /> A2 <input type="radio" name="rdAapha2"
+            id="rd2" value="B2" /> B2 <input type="radio" name="rdAapha2"
+            id="rd3" value="C2" /> C2
+      </div>
+ -->
+
+      <div>
+         <label>Checkboxes:</label> <input type="checkbox" name="checkboxes"
+            id="chk1" value="0" /><span>1</span> <input type="checkbox"
+            name="checkboxes" id="chk2" value="1" /><span>2</span> <input
+            type="checkbox" name="checkboxes" id="chk3" value="2" /><span>3</span>
+         <input type="checkbox" name="checkboxes" id="chk4" value="3" /><span>4</span>
+      </div>
+      <div>
+         <label>select option:</label> <select id="sel1">
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+         </select>
+      </div>
+      <div>
+         <label>textarea:</label>
+         <textarea id="txtA1" cols="30" rows="4"></textarea>
+      </div>
+
+      <button type="button" id="btn1">OK</button>
+
+      <hr />
+      <h3>Result</h3>
+      <div id="divResult"></div>
+   </form>
+</body>
+</html>

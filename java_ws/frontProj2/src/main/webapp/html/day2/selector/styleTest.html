@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selector/styleTest.html</title>
+
+<!-- [3] 외부 스타일시트 파일 link -->
+<link rel="stylesheet" type="text/css" href="../../css/mystyle.css">
+
+<style type="text/css">
+	/* [2] style 태그 안에 스타일 넣기
+			선택자{스타일속성:값}
+	 */
+	 div{
+	 	color:red;
+	 	border: 1px solid green;
+	 }
+	 
+	 p{
+	 	color: orange;
+	 }
+</style>
+</head>
+<body>
+	<h1>스타일시트 사용</h1>
+	<h2>[1] inline방식</h2>
+	<!--
+	 태그 style="스타일 속성:값; 스타일속성:값;"
+	  -->
+	<div style="color:blue;background-color: yellow;">
+		div태그입니다</div>
+	<p>p태그1</p>
+	<p>p태그2</p>
+	<h3>h3태그</h3>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function logincheck(){
+		var name=document.getElementById("name");
+		var id=document.getElementById("id");
+		var pwd=document.getElementById("pwd");
+		
+		if(name.value==""){
+			alert("이름을 입력하세요");
+			document.name.focus();
+			return false;
+		}
+		if(id.value==""){
+			alert("아이디를 입력하세요");
+			document.id.focus();
+			return false;
+		}
+		
+		if(pwd.value==""){
+			alert("비밀번호를 입력하세요");
+			document.pwd.focus();
+			return false;
+		}
+		if(pwd.value!=pwdCheck.value){
+			alert("비밀번호가 다릅니다");
+			document.pwd.focus();
+			return false;
+		}
+
+	}
+	function subzipcode(){
+		window.open("page136_sub.html","","width=300,height=300");
+	}
+
+
+</script>
+<style type="text/css">
+ table{
+ 	width : 100%;
+ 	border : 1px solid #eee;
+ 	border-collapse: separate;
+ }
+ 
+ th{
+ 	background: #eee;
+ }
+ th,td{
+ 	border : 1px solid #eee;
+ }
+</style>
+</head>
+<body>
+<h2>회원 가입</h2>
+<div><p> *표시 항목은 필수 입력 사항입니다 </p></div>
+<form>
+<table>
+	<tr>
+		<th>* 사용자 이름 </th>
+		<td><input type="text" id="name"> </td>
+	</tr>
+	<tr>
+		<th>* 아이디 </th>
+		<td><input type="text" id="id"> <input type="button" value="중복확인"></td>
+	</tr>
+	<tr>
+		<th>* 비밀번호 </th>
+		<td><input type="text" id="pwd"> </td>
+	</tr>
+	<tr>
+		<th>* 비밀번호 확인 </th>
+		<td><input type="text" id="pwdCheck"> </td>
+	</tr>
+	<tr>
+		<th>주소 </th>
+		<td><input type="text" id="zipcode1" size="10">-<input type="text" id="zipcode2" size="10"> <input type="button" value="우편번호 확인" onclick="subzipcode();">
+		<br>
+		<input type="text" id="address1" size="30">
+		<input type="text" id="address2" size="30">
+		
+		 </td>
+	</tr>
+	<tr>
+		<th>휴대폰 번호 </th>
+		<td><input type="text" id="tel"> </td>
+	</tr>
+	<tr>
+		<th>이메일 주소 </th>
+		<td><input type="text" id="email">@
+		<select name="email" id="emailsel">
+			<option value="naver.com">naver</option>
+			<option value="gmail.com">gmail</option>
+			<option value="nate.com">nate</option>
+			<option value="">직접입력</option>
+		
+		</select></td>
+	</tr>
+	<tr>
+		<th>SMS 수신 여부 </th>
+		<td><input type="radio" name="radio" id="send"> 수신 
+			<input type="radio" name="radio" id="nonsend"> 수신 안함
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="button" value="회원가입" onclick="logincheck()">
+		</td>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>

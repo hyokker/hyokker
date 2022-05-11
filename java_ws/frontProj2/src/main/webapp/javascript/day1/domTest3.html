@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function changeColor() {
+		document.getElementById('targetId').style.color = "red";
+
+		var imgEls = document.getElementsByTagName("img");
+		for (var i = 0; i < imgEls.length; i++) {
+			imgEls[i].style.border = "5px solid orange";
+		}
+
+		var langEl = document.getElementById("lang");
+		var list = langEl.getElementsByTagName("li");
+		for (var i = 0; i < list.length; i++) {
+			list[i].style.backgroundColor = "pink";
+		}//for
+	}
+</script>
+</head>
+<body>
+	<h1 id="targetId">DOM이란</h1>
+	<h2 style="color: blue">h2</h2>
+	<button onclick="changeColor();">색상 변경하기</button>
+	<hr>
+	<img src="../image/1.jpg" alt="펜션이미지1">
+	<img src="../image/2.jpg" alt="펜션이미지2">
+	<img src="../image/4.jpg" alt="펜션이미지3">
+	<hr>
+	<ul id="lang">
+		<li>java</li>
+		<li>jsp</li>
+		<li>oracle</li>
+	</ul>
+
+	<hr>
+	<ul>
+		<li>1.java</li>
+		<li>2.jsp</li>
+		<li>3.oracle</li>
+	</ul>
+	<hr>
+	<table width="500" border="1">
+		<tr>
+			<th>제목1</th>
+			<th>제목2</th>
+		</tr>
+		<tr
+			onMouseOver="this.style.backgroundColor='#e8e8ff';this.style.cursor='pointer'"
+			onMouseOut="this.style.backgroundColor=''">
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr
+			onMouseOver="this.style.backgroundColor='#e8e8ff';this.style.cursor='pointer'"
+			onMouseOut="this.style.backgroundColor=''">
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+	</table>
+</body>
+</html>

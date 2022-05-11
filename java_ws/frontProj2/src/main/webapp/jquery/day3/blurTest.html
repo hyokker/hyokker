@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.error {
+	color: red;
+	font-size: 0.8em;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.error').hide();
+		
+		$('.infobox').blur(function(){
+			if($(this).val().length<1){
+				$(this).parent().find('.error').show();
+			}else{
+				//$(this).next().hide();
+				$(this).next('.error').hide();
+			}
+		});
+		
+		$('#submit1').click(function(){
+			$('.infobox').each(function(idx,item){
+				if($(this).val().length<1){
+					$(this).next().show();
+					event.preventDefault();
+				}
+			});
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<form id="signup" method="post" action="a.jsp">
+		<div>
+			<label class="label" for="userid">User Id *</label>
+			 <input	type="text" class="infobox" id="userid" />
+			  <span class="error">필수입력항목입니다</span>
+		</div>
+		<div>
+			<label class="label" for="pwd">Password *</label> <input
+				type="password" class="infobox" id="pwd" /> <span class="error">필수
+				입력항목입니다</span>
+		</div>
+		<div>
+			<label class="label" for="name">Name *</label> <input type="text"
+				class="infobox" id="name" /> <span class="error">필수 입력항목입니다</span>
+		</div>
+		<input id="submit1" type="submit" value="전송">
+	</form>
+
+</body>
+</html>

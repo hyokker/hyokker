@@ -1,0 +1,29 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, hgroup, nav, section {
+	display: block;
+}
+body {
+	font-family:Dotum, 'Times New Roman',serif;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+img{
+	border:0;	
+}
+a{
+	text-decoration: none;	
+}

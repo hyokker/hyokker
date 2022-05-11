@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>textTest1.html</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("html()=>" + $('#sp1').html());
+		console.log("text()=>" + $('#sp1').text());
+		console.log("span html()=>" + $('span').html());
+		console.log("span text()=>" + $('span').text());
+		
+		$('#sp1').html('<u>html로 값 넣기</u>');
+		$('span:eq(1)').text('<u>text로 값 넣기</u>');
+	});
+</script>
+</head>
+<body>
+<span id="sp1"><b>test중</b></span><br>
+<span><b>span 태그입니다</b></span><br>
+</body>
+</html>

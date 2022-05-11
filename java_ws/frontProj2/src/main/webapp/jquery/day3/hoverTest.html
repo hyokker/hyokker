@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.hidden {
+	display: none;
+}
+
+#div1 {
+	background-color: pink;
+	width: 200px;
+	height: 70px;
+	padding: 7px
+}
+
+.hover {
+	cursor: pointer;
+	background-color: lightBlue;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn1').click(function(){
+			$('#div1').toggleClass('hidden');
+		});
+		
+		//$('table tr:gt(0)').hover(function(){
+		$('table tr:eq(0)').nextAll().hover(function(){
+			$(this).addClass('hover');
+		},function(){
+			$(this).removeClass('hover');
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="div1">메뉴 레이어</div>
+	<input id="btn1" type="button" value="버튼" />
+	<br />
+	<br />
+	<table border="1">
+		<tr>
+			<th>번호</th>
+			<th>프로그래밍</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>C#</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>ASP.NET</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>JQuery</td>
+		</tr>
+	</table>
+
+</body>
+</html>

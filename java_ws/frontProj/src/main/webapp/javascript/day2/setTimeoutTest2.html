@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var timerId;
+
+	function startTime(){
+		var today=new Date();
+	    document.getElementById('curTime').innerHTML
+	       ="<h1>"+today.getHours()+"시 "
+	       + today.getMinutes() +"분 " + today.getSeconds()+"초</h1>";
+	          
+	    timerId=setTimeout("startTime()",1000);
+	}
+	
+	function stopTime(){
+		clearTimeout(timerId);
+	}
+</script>
+</head>
+<body>
+	<H1>setTimeout 과 clearTimeout 예</H1>
+	<FORM>
+		<INPUT TYPE="button" VALUE="시간 표시" onClick="startTime()"> <INPUT
+			TYPE="button" VALUE="시간 중지" onClick="stopTime()">
+	</FORM>
+	<div id="curTime"></div>
+</body>
+</html>

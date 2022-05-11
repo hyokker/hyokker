@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>selectorTest8.html</title>
+<style type="text/css">
+	/* 일반 구조 선택자 
+	:first-child 첫 번째에 위치하는 자식을 선택함
+	:last-child 마지막에 위치하는 자식을 선택함
+	:nth-child(수열) 앞에서 수열 번째에 있는 자식을 선택함
+		
+	 */
+	 
+	.ul1 li{
+	 	list-style: none;
+	 	padding: 15px;
+	}
+	 
+	li:first-child {
+	border: 1px solid red; 
+	}
+	
+	li:last-child {
+	border: 5px solid blue;
+	}
+	
+	li:nth-child(2n) {
+	background: pink;
+	}
+	li:nth-child(2n+1) {
+	background: skyblue;
+	}
+a{
+	color : gray;
+}
+
+	
+li>a:first-child {
+	color: orange;
+}	
+
+li:first-child > a {
+	background: green;
+}
+</style>
+</head>
+<body>
+	<ul class="ul1">
+		<li>First</li>
+		<li>Second</li>
+		<li>Third</li>
+		<li>Fourth</li>
+		<li>Fifth</li>
+		<li>Sixth</li>
+		<li>Seventh</li>
+	</ul>
+<hr>	
+	<ul class="myul">
+		<li><a href="#">Condrasa</a></li>
+		<li><a href="#">Condrasa</a></li>
+		<li><a href="#">Condrasa</a></li>
+		<li><a href="#">Condrasa</a></li>
+		<li><a href="#">Condrasa</a></li>
+	</ul>
+
+</body>
+</html>

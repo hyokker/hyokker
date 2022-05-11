@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ui/datepickerTest.html</title>
+</head>
+<body>
+	<p>
+		Date: <input type="text" id="datepicker">
+	</p>
+</body>
+</html>

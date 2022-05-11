@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		border: 1px solid gray;
+		margin: 10px;
+		
+	}
+	#box{
+		background: pink;
+		width: 300px; height: 50px;
+		margin: 10px;
+		
+	}
+	.div2 #box{
+		display: none;
+	}
+	.div3 #box{
+		display: block;
+	}
+	.div4 #box{
+		display: inline;
+	}
+	.div5 #box{
+		display: inline-block;
+	}
+	.div6 #box{
+		visibility: hidden;
+	}
+	/*display속성의 none 키워드와 visibility 속성의 hidden 키워드의 차이 
+	display - 태그가 화면에서 제거됨
+ visibility - 화면에서 보이지 않을 뿐, 영역은 차지함
+	
+	*/
+	
+/* 	inline 을 적용한 코드는 width, height 속성이 지정되지 않음
+	또한 margin 속성이 div 태그의 좌우로만 지정됨
+	
+	inline-block 을 적용하면 width, height 속성을 지정할 수 있고
+	margin 속성이 상하좌우로 적용됨 */
+	
+</style>
+</head>
+<body>
+	<div class="div1">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	
+	</div>
+	<div class="div2">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</div>
+	<div class="div3">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</div>
+	<div class="div4">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</div>
+	<div class="div5">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</div>
+	<div class="div6">
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</div>
+</body>
+</html>

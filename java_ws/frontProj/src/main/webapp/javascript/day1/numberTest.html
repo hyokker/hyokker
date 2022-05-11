@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Number
+		var sum;
+		sum = Number('15') + Number('25');
+		document.write("Number('15') + Number('25') => " + sum + "<p>");
+		//String
+		document.write("String(15) + String(25) => "
+				+ (String(15) + String(25)) + "<p>");
+		//isFinite
+		document.write("isFinite(738493) ===>" + isFinite(738493) + "<br>");
+		document.write("isFinite('738493') ===>" + isFinite('738493') + "<br>");
+		document.write("isFinite(37.478) ===>" + isFinite(37.478) + "<br>");
+		document.write("isFinite(3*5+2) ===>" + isFinite(3 * 5 + 2) + "<br>");
+		document.write("isFinite(0738493) ===>" + isFinite(0738493) + "<br>");
+		document.write("isFinite('자바스크립트') ===>" + isFinite('자바스크립트') + "<br>");
+		document.write("isFinite('baseball') ===>" + isFinite('baseball')
+				+ "<br>");
+		document.write("isFinite('738493자바스크립트') ===>"
+				+ isFinite('738493자바스크립트') + "<p>");
+		//isNaN
+		document.write("isNaN('738493') => " + isNaN('738493') + "<br>");
+		document.write("isNaN(37.478) => " + isNaN(37.478) + "<br>");
+		document.write("isNaN('자바스크립트') => " + isNaN('자바스크립트') + "<br>");
+	</script>
+</body>
+</html>

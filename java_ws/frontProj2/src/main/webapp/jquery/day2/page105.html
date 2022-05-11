@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<style type="text/css">
+img {
+	border: 1px solid gray;
+}
+</style>
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('img').hover(function(){
+			
+			var imgSrc=$(this).attr('src');
+			//순수 파일명만 얻기 herb_big1.PNG
+			imgSrc = imgSrc.substr(imgSrc.lastIndexOf(".") - 1);
+			
+			$('#p1 img').attr('src','../images/herb_big' + imgSrc);
+		},function(){
+
+		});
+	});
+</script>
+</head>
+<body>
+	<div align="center">
+		<p id="p1">
+			<img src="../images/herb_big1.PNG" name="bigImg">
+		</p>
+		<p id="p2">
+			<img src="../images/herb_small1.PNG"> <img
+				src="../images/herb_small2.PNG"> <img
+				src="../images/herb_small3.PNG"> <img
+				src="../images/herb_small4.PNG">
+		</p>
+	</div>
+</body>
+</html>

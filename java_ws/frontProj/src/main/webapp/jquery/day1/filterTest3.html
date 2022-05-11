@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn1').click(function(){
+		/* 	var sports = $('input[type=checkbox]:checked');
+			var result = "";
+			for(var i=0;i<sports.length;i++){
+				result+= $(sports[i]).next().text()+" ";
+			} */
+			var result="";
+			$('input[type=checkbox]:checked').each(function(){
+				result+=$(this).next().text()+" ";
+			});
+			$('#result').html(result);
+			
+			
+			alert("text : " + $('div span').text());
+			alert("html : " + $('div span').html());
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<span><b>test</b></span>
+	
+	</div>
+	
+	<p>
+		스포츠 : <input id="c1" type="checkbox" /><span>농구</span> <input id="c2"
+			type="checkbox" /><span>배구</span> <input id="c3" type="checkbox" /><span>축구</span>
+		<input id="c4" type="checkbox" /><span>야구</span>
+	</p>
+	<p>
+		<input id="btn1" type="button" value="선택" />
+	</p>
+	<p>
+		당신이 선택하신 스포츠는 <span id="result"></span> 입니다.
+	</p>
+</body>
+</html>

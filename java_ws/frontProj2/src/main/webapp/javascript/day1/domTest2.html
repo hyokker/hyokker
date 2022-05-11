@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function send(){
+		if(window.document.frm.name.value==''){
+			alert('이름을 입력하세요');
+			document.frm.name.focus();
+			return;
+		}else if(window.document.frm.id.value.length==0){
+			alert('아이디를  입력하세요');
+			document.frm.id.focus();
+			return;
+		}else if(!window.document.frm.pwd.value){
+			alert('비밀번호를  입력하세요');
+			document.frm.pwd.focus();
+		return;
+		}
+		
+		document.frm.submit();
+}
+
+</script>
+</head>
+<body>
+	<H3>회원가입</H3>
+	<FORM NAME="frm" method="post" action="test01.jsp">
+		이름 <INPUT TYPE="text" name="name"><br> 아이디 <INPUT			
+			
+			TYPE="text" name="id"><br> 비밀번호 <INPUT TYPE="password"	name="pwd"><br>
+			
+			<INPUT TYPE="button" value="전송"	onClick="send()">
+	</FORM>
+</body>
+</html>

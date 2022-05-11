@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#chkAll').change(function(){
+/* 			if(this.checked){
+				$('#chkItem > input[type=checkbox]').prop('checked',true);
+			}else{
+				$('#chkItem').children('input[type=checkbox]').prop('checked',false);
+				
+			} */
+			$('#chkItem').find('[type=checkbox]')
+				.prop('checked',this.checked);
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="checkbox" id="chkAll" />
+	<label for="chkAll">All</label>
+	<div id="chkItem">
+		<input type="checkbox" id="chk1" /><label for="chk1">참외</label> <input
+			type="checkbox" id="chk2" /><label for="chk2">자두</label> <input
+			type="checkbox" id="chk3" /><label for="chk3">수박</label>
+	</div>
+</body>
+</html>

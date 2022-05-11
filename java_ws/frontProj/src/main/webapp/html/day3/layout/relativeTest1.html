@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+/* 
+	relative
+ 엘리먼트의 원래 위치를 기준으로 위치 이동
+ 엘리먼트의 원래의 높이와 넓이 값이 적용
+	absolute
+ 부모 엘리먼트를 기준으로 위치가 이동
+ 넓이와 높이 값이 사라짐(원래 영역이 사라짐)
+	
+*/
+* {
+	margin: 0;
+}
+
+div {
+	width: 150px;
+	height: 50px;
+}
+
+.box1 {
+	background: orange;
+}
+
+.box2 {
+	background: cyan;
+	position: relative;
+	left: 40px;
+	top: 20px;
+}
+
+.box3 {
+	background: pink;
+}
+</style>
+</head>
+<body>
+	<div class="box1">box1- static</div>
+	<div class="box2">box2 - relative</div>
+	<div class="box3">box3 - static</div>
+</body>
+</html>

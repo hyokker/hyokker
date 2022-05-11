@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var v_global="전역 변수";
+		
+	function f_vari(){
+		var v_local="지역변수";
+		document.write("v_global="+v_global+"<br>");
+		document.write("v_local="+v_local+"<br>");
+	}
+	
+	f_vari();
+	
+	b=100;
+	var c;
+	
+//	document.write("함수 밖에서 v_local="+v_local+"<br>"); //error
+	document.write("함수 밖에서 v_global="+v_global+"<br>");
+	document.write("b="+b+"<br>");
+	document.write("c="+c+"<br>");
+	document.write("a="+a+"<br>");//error
+</script>
+</head>
+<body>
+
+</body>
+</html>

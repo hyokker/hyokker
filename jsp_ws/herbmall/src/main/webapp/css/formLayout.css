@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+	.divForm div, .divForm label, .divForm .sp1{
+		font-size:1.0em; 
+	}
+	.divForm form, .divForm{
+		width: 650px;
+		}
+	.divForm fieldset	{
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+		border: 0;
+		border-bottom: 2px solid #e2e2e2;
+		}
+	.divForm legend	{
+		font-weight: bold;
+		color: #555555; /* #7AA3EB; */
+		padding: 10px 0;
+		margin:10px 0;
+		font-size: 1.3em;
+		}	
+	.divForm div	{
+		clear: both;
+		border-bottom: 1px solid #eee;
+		padding: 5px 0;
+		margin: 0;
+		overflow: auto;
+		}	
+	.divForm .firstDiv	{
+		border-top: 2px solid #e2e2e2/* #aacc00 */;
+	}
+	.divForm .lastDiv	{
+		border-bottom: 1px solid silver;
+	}
+		
+	.divForm label, .divForm .sp1	{
+		width: 20%;
+		float: left;
+		text-align: right;
+		padding: 3px 15px 0 0;
+		clear: left;		
+		font-weight: bold;
+		}
+	.divForm input[type="text"], .divForm input[type="password"]{
+		width: 55%;
+		height: 1.2em;
+		font-size: 0.9em;
+		border: 1px solid #DCDDE3;
+		}
+	.divForm input[type="submit"], .divForm input[type="reset"], 
+	.divForm input[type="button"],	.divForm button{
+		padding: 2px 10px;
+		/* font-weight: bold; */
+		/* color: #CD1076; */
+		}
+	.divForm textarea	{
+		width: 70%;
+		border: 1px solid #DCDDE3;
+		float: left;
+		}
+	.divForm .center	{
+		border: none;
+		text-align: center;
+		margin:10px 0;
+		}
+	.divForm select{		
+		border: 1px solid #DCDDE3;
+		font-size: 0.9em;
+		}
+	.divForm .content{		
+		padding:25px;
+		}	
+	
+			
+/* 표 css */
+.divList, .divPage, .divSearch, .divRight, .divList table{
+		width:700px;
+	}	
+	.divList{
+		margin:10px 0;
+	}
+	caption{
+		visibility:hidden;
+		font-size:0.1em;
+	}	
+	.divPage{
+		text-align:center;		
+		padding:5px 0;
+	}	
+	.divSearch{
+		text-align:center;		
+		padding:5px 0 2px 0;
+	}	
+	.divBtn{
+		text-align:right;	
+		width:700px;
+	}
+	.divBtn a{
+		font-size:1.0em;
+	}
+	.divRight{
+		text-align:right;	
+		width:700px;
+	}
+		

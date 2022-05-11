@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/*자손에 float 속성을 적용하면 부모의 overflow 속성에 hidden 키워드를 적용함*/
+
+	body{
+		width:960px;
+		margin:0 auto; /* 중앙정렬 */
+	}
+	
+	#aside{
+		width:200px;
+		float : left;
+	}
+	
+	#section{
+		width:760px;
+		float: left;
+	}
+	
+	#wrap{
+		overflow: hidden;
+	}
+	#footer{
+		/* clear:both; */
+	}
+</style>
+</head>
+<body>
+	<header id="header">
+		<h1>Header</h1>
+	</header>
+	<nav id="navigation">
+		<h1>Navigation</h1>
+	</nav>
+	<div id="wrap">
+		<aside id="aside">
+			<h1>Aside</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</aside>
+		<section id="section">
+			<article>
+				<h1>Section</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</article>
+		</section>
+	</div>
+	<footer id="footer">
+		<h1>Footer</h1>
+	</footer>
+</body>
+</html>

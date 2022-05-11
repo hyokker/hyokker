@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div {
+	width: 200px;
+	height: 200px
+}
+
+.outer {
+	background: skyblue;
+	padding: 50px;
+}
+
+.inner {
+	background: pink;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.outer').mouseover(function(){
+			$('body').append('<h3>mouseover</h3>');
+		}).mouseenter(function(){
+			$('body').append('<h3>MOUSEENTER</h3>');	
+		});
+		
+		/* mouseover 이벤트는 이벤트 버블링을 적용함
+		- 내부의 div 태그 안에 들어가도 이벤트를 발생시킴
+ 		*/
+	})
+</script>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner"></div>
+	</div>
+</body>
+</html>

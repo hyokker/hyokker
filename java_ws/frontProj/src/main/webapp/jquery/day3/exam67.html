@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.lbError {
+	color: red;
+}
+.hover { cursor:pointer; background-color:lightBlue; }
+
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#chkAll').change(function(){
+			$('#chkItem').find('[type=checkbox]')
+			.prop('checked',this.checked);				
+		});
+		
+		$('.infobox').blur(function(){//아이디
+			var data=$('.infobox').val();
+			if(validate_userid(data)){
+				$('.infobox').parent().find('.lbError').hide();
+			}else{
+				$('.infobox').parent().find('.lbError').show();
+				event.preventDefault();
+			}
+		});
+		
+		$('input[type=password]').blur(function(){//암호
+			if($('#txPwd').val()!=$(this).val()){
+				$('#txPwdConfirm').parent().find('.lbError').show();
+			}else{
+				$('#txPwdConfirm').parent().find('.lbError').hide();
+				event.preventDefault();
+			}
+		});
+		
+		$('table tr:gt(0)').hover(function(){//테이블
+			$(this).addClass('hover');
+		},function(){
+			 $(this).removeClass('hover');
+		});
+		
+	});
+	
+	function validate_userid(id){
+		var pattern=new RegExp(/^[a-zA-Z0-9*@]+$/g);
+		return pattern.test(id);
+	}
+</script>
+</head>
+<body>
+	<form method="post" action="a.jsp">
+		<div>
+			<input type="checkbox" id="chkAll" /><label for="chkAll">All</label>
+			<div id="chkItem">
+				<input type="checkbox" id="chk1" /><label for="chk1">참외</label> <input
+					type="checkbox" id="chk2" /><label for="chk2">자두</label> <input
+					type="checkbox" id="chk3" /><label for="chk3">수박</label>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<label class="label" for="userid">아이디</label> 
+			<input type="text" class="infobox" name="userid" id="userid" />
+			<span class="lbError">아이디는	문자,숫자,*,@만을 포함할 수 있습니다.</span>
+		</div>
+		<div>
+			비밀번호:<input type="password" id="txPwd" size="20"><br />
+			비밀번호확인:<input type="password" id="txPwdConfirm" size="20">
+			<span class="lbError">암호를 입력하시오.</span>
+		</div>
+		<input type="button" id="btOK" value="확인" />
+	</form>
+	<hr>
+	<table border="1">
+		<tr>
+			<th>프로그래밍1</th>
+			<th>프로그래밍2</th>
+		</tr>
+		<tr>
+			<td>C#</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>ASP.NET</td>
+			<td>C++</td>
+		</tr>
+		<tr>
+			<td>JQuery</td>
+			<td>java</td>
+		</tr>
+	</table>
+	</
+</body>
+</html>

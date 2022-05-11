@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.p1 {
+	color: red;
+	font-size: 10pt;
+}
+
+.p2 {
+	color: blue;
+	font-size: 20pt;
+}
+
+.p3 {
+	color: green;
+	font-size: 30pt;
+}
+</style>
+
+
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('div').addClass('p1');
+		
+/* 		$('p').addClass(function(idx){
+			return 'p'+(idx+1);
+		});
+		 */
+		$('p').each(function(idx,item){
+			$(this).addClass('p'+(idx+1));
+		});
+	});
+</script>
+</head>
+<body>
+	<p>문단1</p>
+	<p>문단2</p>
+	<p>문단3</p>
+	<hr>
+	<div>div태그1</div>
+	<div>div태그2</div>
+	<div>div태그3</div>
+</body>
+</html>

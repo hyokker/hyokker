@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function getHigh(myForm){
+		var a=parseInt(myForm.name.value);
+		var b=Number(document.getElementById("id").value);
+		//var a=Number(myForm.name.value);
+		//var b=Number(myForm.id.value);
+		var result="";
+		if(a>b){
+			result="더 큰수는 "+Number(a)+"입니다.";
+		}else{
+			result="더 큰수는 "+Number(b)+"입니다.";
+		}
+		alert(result);
+	}
+</script>
+
+</head>
+<body>
+<form name="sum">
+	첫번째 수 입력<input type="text" name="name">
+	<p>두번째 수 입력<input type="text" id="id">
+	<p><input type="button" value="더 큰 수 구하기" onClick="getHigh(this.form)">
+
+</form>
+</body>
+</html>

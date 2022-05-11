@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function m_site(){
+		window.location.href="http://www.google.co.kr";
+	}
+	
+	function loadURL(){
+		//location.href=document.frm1.site.value;
+		location.href
+		=document.frm1.site.options[document.frm1.site.selectedIndex].value;
+		
+		console.log("index="+document.frm1.site.selectedIndex);
+	}
+</script>
+</head>
+<body>
+	<H2>사이트 이동</H2>
+	<FORM name="frm1">
+		<INPUT TYPE="button" VALUE="구글로 이동" onClick="m_site()">
+		<p>
+			<SELECT NAME="site">
+				<OPTION VALUE="http://www.google.co.kr">구글 홈페이지
+				<OPTION VALUE="http://www.naver.com" selected>네이버 홈페이지
+				<OPTION VALUE="http://www.daum.net">다음 홈페이지
+			</SELECT> <input type="button" VALUE="접속" onClick="loadURL()">
+			</SELECT> <input type="button" VALUE="접속2" onClick="location.href='../main.html'">
+	</FORM>
+</body>
+</html>

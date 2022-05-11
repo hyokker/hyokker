@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>로그인</title>
+<style type="text/css">
+body {
+	margin: 0 auto;
+}
+
+div {
+	border: 1px solid gray;
+	width: 300px;
+	float: left;
+}
+
+input#id {
+	margin-left: 16px;
+}
+
+input.login {
+	margin-left: 80px;
+	margin-top: 15px;
+}
+
+h1 {
+	color: silver;
+	font-style: oblique;
+}
+
+.login, .register {
+	text-align: center;
+}
+
+
+</style>
+<script type="text/javascript">
+	function loginCheck(){
+		var id = document.getElementById("id").value;
+		var pwd = document.getElementById("pwd").value;
+		
+		if(id==""){
+			alert("아이디를 입력하세요");
+
+		
+		}else if(pwd==""){ 
+			alert("비밀번호를 입력하세요");
+		
+		}
+	}
+	
+	function go(){
+		location.href="agreement.html";
+	}
+	
+</script>
+</head>
+<body>
+	<h1>로그인</h1>
+	<form>
+		<div>
+			<label>아이디 <input type="text" id="id"></label><br>
+			 <label>비밀번호<input type="password" id="pwd"></label><br>
+			  <input type="submit" class="login" value="로그인" onclick="loginCheck();">
+			  <input type="button" class="register" value="회원가입" onclick="go();">
+		</div>
+	</form>
+</body>
+</html>

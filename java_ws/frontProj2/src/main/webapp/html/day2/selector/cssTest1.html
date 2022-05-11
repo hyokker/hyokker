@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+/* 선택자를 사용해 특정한 HTML 태그를 선택하면 해당 태그에 원하는
+		스타일 또는 기능을 적용 */
+/* 스타일은 상속됨 
+	- 부모 요소의 스타일이 자식 태그에도 그대로 적용됨
+	- 배경색이나 배경 이미지는 상속되지 않음*/
+	body {
+		background-color: #333;
+		color: white;
+	}
+	
+	ul {
+		color: blue;
+		list-style: square;
+	}
+	/*하나의 요소에 여러 스타일 규칙이 정의되어 있다면 가장 나중에 정의된 스타일을 적용함 */
+	.accent{
+	color: blue;
+	}
+	.accent{
+	color: red;
+	}
+</style>
+</head>
+<body>
+	<h2>예약 방법 및 요금</h2>
+	<p>요안도라 예약의 가장 빠른 방법은?</p>
+	<hr>
+	<section>
+		<h2>예약 방법 및 요금</h2>
+		<p>요안도라 예약의 가장 빠른 방법은?</p>
+		<ul>
+			<li>예약 방법</li>
+			<ul>
+				<li>직접 통화</li>
+				<li>문자 남기기</li>
+			</ul>
+			<li>요금</li>
+			<ul>
+				<li>1 인 : 40,000 원</li>
+				<li>2 인 : 60,000 원</li>
+				<li>3 인 : 80,000 원</li>
+				<li>4 인 : 100,000 원</li>
+				<li>4 인 이상일 경우 상의해 주세요.</li>
+			</ul>
+		</ul>
+	</section>
+	<hr>
+<body>
+	<p class="accent">성산의 날씨는 다음주 내내...</p>
+
+</body>
+</html>

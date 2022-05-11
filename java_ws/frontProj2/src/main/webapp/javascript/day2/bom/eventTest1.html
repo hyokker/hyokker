@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.onmousedown=sample1;
+	
+	function sample1(){
+		document.bgColor='pink';
+	}
+	function sample2(){
+		document.bgColor='green';
+	}
+	
+	window.onload=function(){
+		var bt =document.frm.btn;
+		bt.onclick=sample2;
+	}
+</script>
+</head>
+<body>
+	<form name="frm">
+		이름 : <input type="text" name="str"> <input type="button"
+			value="pink" onclick="sample1()"> <input type="button"
+			value="green" name="btn" id="btn"><br>
+	</form>
+
+	</script>
+</body>
+</html>

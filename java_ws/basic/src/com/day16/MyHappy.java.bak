@@ -1,0 +1,6 @@
+package com.happy;
+class MyHappy {
+	public  void display() {
+		System.out.println("MyHappy ¸Þ¼­µå");
+	}
+}

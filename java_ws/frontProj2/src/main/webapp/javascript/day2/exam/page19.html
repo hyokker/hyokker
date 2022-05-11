@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function rel(){
+		location.reload();
+	}
+	function site(){
+		window.location.href="http://www.naver.com";
+
+	}
+</script>
+</head>
+<body>
+
+<input type="button" value="뒤로" onclick="history.back()">
+<input type="button" value="앞으로" onclick="history.go()">
+<input type="button" value="새로고침" onclick="rel()">
+<input type="button" value="네이버로 이동" onclick="site()">
+<div id="curTime"></div>
+<script type="text/javascript">
+
+    var today=new Date();
+    document.getElementById('curTime').innerHTML
+    = "<h4>현재 시간은"+today.toLocaleString()+"</h4>";
+</script>
+</body>
+</html>

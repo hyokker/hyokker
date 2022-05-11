@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.error {
+	color: red;
+	font-size: 0.8em;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.error').hide();
+		
+		$('#signup').submit(function(){
+			//var str = $('#lang').val();
+			var str = $('#lang option:selected').val();
+			if(str==0){
+				$('error').show();
+				event.perventDefault();
+			}else{
+				$('error').hide();
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<form id="signup" method="post" action="a.jsp">
+		<label for="lang">사용가능언어</label> <select id="lang" class="infobox">
+			<option value="0">선택하세요</option>
+			<option value="1">java</option>
+			<option value="2">jsp</option>
+			<option value="3">c</option>
+		</select> <span class="error">언어를 선택하셔야 합니다</span> <br>
+		<br> <input class="submit" type="submit" value="전송">
+	</form>
+
+</body>
+</html>

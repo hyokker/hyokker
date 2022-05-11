@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#outer').hover(function(){
+			$('#gaege').animate({
+				width:'100%'		
+				},3000);
+			},function(){
+				width:'0%'
+				},3000)
+	});
+</script>
+<style>
+div#outer {
+	width: 301px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+div#gaege {
+	width: 0;
+	height: 20px;
+	background: gray;
+}
+</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="gaege"></div>
+	</div>
+
+</body>
+</html>

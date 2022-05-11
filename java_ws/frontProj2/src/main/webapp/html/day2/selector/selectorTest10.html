@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	p::first-letter {
+	font-size: 3em;
+	}
+	p::first-line{
+		color: red;
+	}
+	
+	div p::selection{
+		background: black;
+		color: white;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	a:visited {
+		color: orange;
+	}
+	a:link{
+		border: 3px solid green;
+	}
+	
+	input:not([type=password]){
+		background: pink;
+	}
+</style>
+</head>
+<body>
+	<h1>Lorem ipsum dolor sit amet</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Aenean ac erat et massa vehicula laoreet consequat et sem.
+	Aenean ac erat et massa vehicula laoreet consequat et sem.
+	Aenean ac erat et massa vehicula laoreet consequat et sem.
+	Aenean ac erat et massa vehicula laoreet consequat et sem.
+	</p>
+<hr>
+<div>
+	<h1>Lorem ipsum dolor sit amet</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+</div>
+<hr>
+	<h1><a>Nothing</a></h1>
+	<h1><a href=http://hani.co.kr>한겨레</a></h1>
+	<h1><a href="http://www.w3.org/">W3C</a></h1>
+	<h1><a href="https://github.com/">Github</a></h1>
+<hr>
+	<input type="password" />
+	<input type="text" />
+	<input type="password" />
+	<input type="text" />
+</body>
+</html>

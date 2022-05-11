@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function displayTime(){
+	var d = new Date();
+	document.getElementById('curTime').innerHTML
+	="<h1>"+"현재 시간은 "+d.getHours()+"시 "+d.getMinutes() +"분 " + d.getSeconds()+"초 입니다</h1> ";
+	}
+	
+	d=setInterval("displayTime()", 1000);
+	
+	</script>
+</head>
+<body>
+	<div id="curTime"></div>
+	<IMG NAME="dog1" id="dog1" SRC="../../image/1.png" BORDER=1>
+		</body>
+</html>

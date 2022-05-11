@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#showImage {
+	display: none;
+	border: 1px solid gray;
+	width: 300px;
+	height: 300px;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#product img').hover(function(){
+			$('#showImage').show();
+			
+			var imgSrc=$(this).attr('src'); //=>./images/herb1.JPG"
+			//순수 파일명만 얻기 hreb1.jpg
+			imgSrc=imgSrc.substr(imgSrc.lastIndexOf("/")+1);
+			
+			$('#showImage img').attr('src','../images/big/' + imgSrc);
+		},function(){
+			$('#showImage').hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="product">
+		<img src="../images/herb1.JPG" /> <img src="../images/herb2.JPG" />
+		<div id="showImage">
+			<img />
+		</div>
+	</div>
+
+
+</body>
+</html>

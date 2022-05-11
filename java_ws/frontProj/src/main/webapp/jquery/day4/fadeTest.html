@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div {
+	width: 200px;
+	height: 140px;
+	border: 1px solid gray;
+	text-align: center;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+   $(function() {
+      $('#div1 img').css('display', 'none');
+
+      $('#div1').click(function() {
+         $('#div1 span').hide();
+         $('#div1 img').fadeIn(3000);
+      });
+      $('#div2 span').hide();
+
+      $('#div2').click(function() {
+         $('#div2 img').fadeOut(3000, function() {
+            $('#div2 span').show();
+         });
+      });
+      
+      $('div:eq(2) img').mouseenter(function(){
+    	 $(this).fadeTo('slow', 0.2); 
+      }).mouseleave(function(){
+    	 $(this).fadeTo('slow', 1); 
+      });
+   });
+</script>
+</head>
+<body>
+	<div id="div1">
+		<span>Click Me!</span> <img src="../images/dog.jpg" alt="강아지 이미지">
+	</div>
+	<div id="div2">
+		<span>Click Me!</span> <img src="../images/dog.jpg" alt="강아지 이미지">
+	</div>
+
+	<div>
+		<img src="../images/dog.jpg" alt="강아지 이미지">
+	</div>
+</body>
+</html>

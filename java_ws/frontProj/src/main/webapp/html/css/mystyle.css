@@ -1,0 +1,120 @@
+@charset "EUC-KR";
+
+/* css/mystyle.css */
+body{
+	
+	font: 14px ¸¼Àº °íµñ;
+}
+div {
+	color: green;
+	font-weight: bold;
+}
+
+h1 {
+	color: gray;
+}
+
+header hgroup {
+	position: relative;
+	top: 120px;
+	left: 600px;
+}
+
+hgroup h1 {
+	font-size: 3em;
+	color: #ffc;
+	text-shadow: 1px 2px 2px #000;
+}
+
+.navi {
+	background: green;
+	height: 60px;
+	margin: 0;
+}
+
+header {
+	background-image: url('../image/bg.png');;
+	width: 960px;
+	height: 280px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #e7e7e7;
+}
+
+hgroup h2 {
+	font-size: 2em;
+	color: #FF0;
+	text-shadow: 0px 1px 1px #000;
+}
+
+.navi ul {
+	float: left;
+	margin: 20px 0;
+}
+
+.navi ul li {
+	float: left;
+	margin: 0px 55px;
+	font-size: 19px;
+}
+
+.navi ul li a {
+	color: white;
+	font-size: 0.8em;
+}
+
+.content h2 {
+	color: black;
+	font-size: 1.5em;
+}
+
+article {
+	color: black;
+	font-weight: bold;
+	float: left;
+	width: 672px;
+}
+
+article p {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	background: #035a03;
+	margin: 5px 0;
+	padding: 10px;
+	clear: both;
+}
+
+.sidebar1 {
+	float: right;
+	width: 200px;
+	height: 500px;
+	color: black;
+	margin-bottom: 2px;
+	background: #b7f9d5;
+	padding: 20px 10px;
+}
+
+.content {
+	width: 720px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 10px;
+	
+}
+
+.sidebar1 p {
+	color: black;
+}
+
+sidebar1 h3 {
+	color: black;
+}

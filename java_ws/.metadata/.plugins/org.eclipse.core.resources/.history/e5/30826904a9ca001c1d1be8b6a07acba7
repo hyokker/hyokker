@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+header{
+	background-image: url("headerlogo.gif");
+}
+</style>
+</head>
+<body>
+<header><div>
+	
+</div> </header>
+<div id="content">
+<section>
+
+</section>
+<aside>
+
+</aside>
+</div>
+<footer></footer>
+</body>
+
+</html>

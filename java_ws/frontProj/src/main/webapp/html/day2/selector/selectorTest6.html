@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+   /* 자식 선택자
+   선택자A >선택자B : 선택자A의 자식에 위치하는 선택자B를 선택함
+   */
+   #header > h1{
+      color: red;
+   }
+   
+   #section > h1{
+      color: orange;
+   }
+   table>tr>th{
+   		color: blue; /* 스타일 속성이 적용되지 않음
+   						table 태그에 tbody태그가 자동으로 추가되므로*/
+   }
+   
+    table tr>th{
+    	color: green;
+    }
+    table>tbody>tr>td{
+    	color: red;
+    }
+</style>
+</head>
+<body>
+   <div id="header">
+      <h1 class="title">Lorem ipsum</h1>
+      <div id="nav">
+         <h1>Navigation</h1>
+      </div>
+   </div>
+   <div id="section">
+      <h1 class="title">Lorem ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+   </div>
+   <hr>
+   <table border="1">
+      <tr>
+         <th>Name</th>
+         <th>Region</th>
+      </tr>
+      <tr>
+         <td>홍길동</td>
+         <td>서울특별시 강남구 역삼동</td>
+      </tr>
+   </table>
+
+</body>
+</html>

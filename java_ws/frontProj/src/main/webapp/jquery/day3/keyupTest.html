@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#txtPwd').keyup(function(){
+			$('#lblError').text('');
+		});
+		$('#txtPwdConfirm').keyup(function(){
+		
+			if($('#txtPwd').val()!=$(this).val()){
+				$('#lblError').html('<b>비밀번호가 틀립니다.</b>');
+			}else{
+				$('#lblError').html('<b>비밀번호가 맞습니다.</b>');
+			}
+		});
+		
+		
+	});
+</script>
+</head>
+<body>
+	비밀번호:<input type="password" id="txtPwd" size="20"><br />
+	비밀번호 확인:<input type="password" id="txtPwdConfirm" size="20"><br />
+	<input type="button" id="btnOK" value="확인" />
+	<div id="lblError" style="color: red">암호를 입력하시오.</div>
+</body>
+</html>

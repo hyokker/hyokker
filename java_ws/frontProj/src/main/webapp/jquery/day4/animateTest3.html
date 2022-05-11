@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div{
+width: 220px; 
+height: 58px; 
+border: 1px solid gray; 
+text-align:left;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('img').click(function(){
+			$(this).animate({
+				width:'100%',
+				opacity:0.4,
+				marginLeft:20
+			},2000);
+		});
+			
+		$('#btn1').click(function(){
+			$('img').animate({
+				marginLeft:100
+			},1000).animate({
+				marginTop:100
+			},1000);
+		})
+	});
+</script>
+</head>
+<body>
+<div>
+<img src="../images/jQuery.jpg" alt="Hello, jQuery!">
+</div>
+<input id="btn1" type="button" value="이동" />
+</body>
+</html>

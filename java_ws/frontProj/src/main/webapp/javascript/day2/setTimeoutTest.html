@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>setTimeoutTest.html</title>
+<script type="text/javascript">
+/*  setTimeout()
+ 	-정해진 시간이 지나면 특정 함수를 1회에 한해 호출하는 메서드
+ 	TimerID = setTimeout("실행할 함수", 일시 중지될 시간);
+
+	clearTimeout(TimerID)
+	- setTimeout()으로 설정한 시간을 해제하는 기능
+*/
+	var mywin;
+	function winOpen(){
+		mywin=window.open("","win",
+				"width=150,height=110,location=yes,resizable=yes");
+		mywin.document.write("이 창은 2초가 지나면 자동으로 닫힙니다. ");
+		
+		setTimeout(winClose,2000);
+		
+	}
+	
+	function winClose(){
+		mywin.close();
+	}
+</script>
+</head>
+<body onload="winOpen()">
+	<h1>setTimeout 연습</h1>
+</body>
+</html>

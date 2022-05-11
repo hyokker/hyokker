@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('p').html('<b>안녕</b>');
+		
+/* 		$('div').html(function(idx){
+			return "<p>문단-"+idx+"</p>";
+		});
+		 */
+/* 		$('h2').html(function(idx, html){
+			return "["+ html + "]" ; //두번째 매개변수에 원래 있던 html 내용이 들어감
+			
+		}); */
+		
+
+		$('div').each(function(idx,item){
+	         $(this).html("<p>문단-"+idx+"</p>");
+	      });
+	     $('h2').each(function(index,item){
+	         var str=$(item).html();
+	    	 $(this).html("["+str+"]");
+	      });
+		
+/* 		$('h2').each(function(idx,item){
+			$(this).html("["+item+"]");
+		}); */
+	});
+</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+	<h2>제목1</h2>
+	<h2>제목2</h2>
+	<h2>제목3</h2>
+	
+	<hr>
+	<p>p태그1</p>
+	<p>p태그2</p>
+	<p>p태그3</p>
+</body>
+</html>

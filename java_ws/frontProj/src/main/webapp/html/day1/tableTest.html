@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>tableTest.html</title>
+</head>
+<body>
+	<h1>테이블 태그</h1>
+	<table border="1" style = " width:400px">
+		<tr>
+			<th>제목1</th>
+			<th>제목2</th>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용3</td>
+			<td>내용4</td>
+		</tr>
+	</table>
+	
+	
+	<h1>colspan, rowspan</h1>
+	<table border="1">
+		<tr>
+			<th colspan="3">제목 1</th>
+			<th rowspan="3">제목 2</th>
+		</tr>
+		<tr>
+			<td>내용1</td>
+			<td rowspan="2">내용2</td>
+			<td>내용3</td>
+		</tr>	
+		<tr>
+			<td>내용4</td>
+			<td>내용5</td>
+		</tr>
+	</table>
+	
+	<hr>
+	<table border = "1" style="width:400px">
+		<tr>
+			<td colspan="2">1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td rowspan="2">7</th>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>10</td>
+		</tr>	
+	</table>
+	
+	<h3>*도미토리</h3>
+	<table summary="4인실과 2인실이 있으며 1인당 2만원입니다" border="1" width="400px">
+	
+	<caption>요안도라 객실</caption>
+		<tr>
+			<th>방이름</th>
+			<th>대상</th>
+			<th>크기</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<th>유채방</th>
+			<td>여성 도미토리</td>
+			<td rowspan="3">4인실</td>
+			<td rowspan="4">1인 20,000원</td>
+		</tr>
+		<tr>
+			<th rowspan="2">동백방</th>
+			<td> 동성 도미토리 </td>
+		</tr>
+		<tr>
+			<td> 가족 1팀 </td>
+		</tr>	
+		<tr>
+			<th> 천혜향방 </th>
+			<td> - </td>
+			<td> 2인실 </td>
+		</tr>
+		<tr>
+			<th> 합 계 </th>
+			<td colspan="3"></td>
+	</table>
+</body>
+</html>

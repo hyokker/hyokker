@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').on('click',function(){
+			$('#div1').html($(this).text()+ " 클릭 됨!");
+		});
+		$('button').on({
+			mouseover:function(){
+				$(this).css('background','pink');
+			},
+			mouseout:function(){
+				$(this).css('background','');
+				
+			}
+		});
+		
+		$('.div2 button').hover(function(){
+			$(this).css('background','cyan');
+		}, function(){
+			$(this).css('background','');	
+		});
+
+		
+		
+		$('.div3 button').mouseenter(function(){
+			$(this).css('background','orange');
+		}),mouseleave(function(){
+			$(this).css('background','');
+		});
+	});
+</script>
+</head>
+<body>
+	<button>버튼1</button>
+	<br>
+	<button>버튼2</button>
+	<br>
+	<button>버튼3</button>
+	<br>
+	<div id="div1"></div>
+	<hr>
+	<div class="div2">
+		<button>버튼1</button><br>
+		<button>버튼2</button><br>
+		<button>버튼3</button><br>
+	</div>
+	<hr>
+	<div class="div3">
+		<button>버튼1</button><br>
+		<button>버튼2</button><br>
+		<button>버튼3</button><br>
+	</div>
+</body>
+</html>

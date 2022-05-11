@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>로그인</title>
+</head>
+<body>
+	<h1>로그인</h1>
+	<form>
+		<p>아이디 :</p><input type="text" id="id">
+		<p>비밀번호 :</p><input type="password" id="pwd"><br>
+		<input type="button" value="로그인">
+		<input type="button" value="회원가입">
+	</form>
+</body>
+</html>
