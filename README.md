@@ -1,9 +1,7 @@
 
-<p align="center">🇰🇷 🇦🇺 🇸🇬</p>
+
 
 <h3 align="center">🛠 기술 🛠</h3>
-
-<p align="center"> Techs that I've used at least once </p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/></a>
