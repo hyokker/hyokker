@@ -38,6 +38,6 @@
 
 </div>   
 
-# 진행 한 프로젝트
-[1.원더(Wonder)](https://github.com/hyokker/wonder)
+### 진행 한 프로젝트
+[원더(Wonder)](https://github.com/hyokker/wonder)
  
