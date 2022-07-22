@@ -28,14 +28,9 @@
 <img src="https://img.shields.io/badge/kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=black"/>
 <img src="https://img.shields.io/badge/chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white"/>
 <img src="https://img.shields.io/badge/iamport-007396?style=for-the-badge&logo=Java&logoColor=white"/>
-</p>
-
-<br>
-
-  
-<br>
-
-
+</p>   
+   
+   
 <p align="center">
 열정 가득한 신입 개발자 입니다. 부족한게 많지만 무엇이든 적극적으로 해결해 나가겠습니다!.
 </p>
@@ -43,7 +38,6 @@
 
 </div>   
 
-
-
-# 
+# 진행 한 프로젝트
+[1.원더(Wonder)](https://github.com/hyokker/wonder)
  
