@@ -6,7 +6,7 @@
   
 <div align="center">
   
-  ###노래하는 개발자 Hyokker입니다.
+  노래하는 개발자 Hyokker입니다.
 </div>
 
 <h3 align="center">🛠 기술 🛠</h3>
