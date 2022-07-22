@@ -1,6 +1,6 @@
-<img src="https://user-images.githubusercontent.com/105181325/180355371-d7d9383a-f46d-44b3-8b2a-b16b585d9559.jpg">
+<img src="https://user-images.githubusercontent.com/105181325/180355371-d7d9383a-f46d-44b3-8b2a-b16b585d9559.jpg" align="center" width="30%" height="30%">
 
-<div>
+<div align="center">
   
   ###노래하는 개발자 Hyokker입니다.
 </div>
