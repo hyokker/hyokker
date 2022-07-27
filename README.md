@@ -47,7 +47,8 @@
 
 [1. java의 특징](https://github.com/hyokker/JavaStudy/blob/main/JAVA.md)   
 [2. java의 컴파일과정과 기본 자료형](https://github.com/hyokker/JavaStudy/blob/main/JavaCompile.md)   
-[3. 오버라이딩 메소드와 오버로딩 메소드](https://github.com/hyokker/JavaStudy/blob/main/overriding.md)
+[3. 객체지향 프로그래밍(Object Oriented Programming)](https://github.com/hyokker/JavaStudy/blob/main/Object-OrientedProgramming.md)
+[4. 오버라이딩 메소드와 오버로딩 메소드](https://github.com/hyokker/JavaStudy/blob/main/overriding.md)
   
 # 📌진행 한 프로젝트   
 ### 프로젝트 제목을 클릭하시면 해당 프로젝트 소개로 이동합니다.
