@@ -45,7 +45,7 @@
 # 📌 공부 목록   
 ### 소제목을 클릭하시면 해당 공부 내용으로 이동합니다.
 
-[- java의 특징]()
+[1. java의 특징](https://github.com/hyokker/JavaStudy/blob/main/JAVA.md)
   
 # 📌진행 한 프로젝트   
 ### 프로젝트 제목을 클릭하시면 해당 프로젝트 소개로 이동합니다.
