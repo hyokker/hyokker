@@ -8,7 +8,7 @@
   
 <div align="center">
   
-  음악을 사랑하며,노력하는 개발자 Hyokker입니다.
+  협업을 좋아하고 음악을 사랑하는 개발자 Hyokker입니다.
 </div>
 
 <h3 align="center">🛠 기술 🛠</h3>
