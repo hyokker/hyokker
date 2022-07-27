@@ -52,6 +52,5 @@
   
 # 📌진행 한 프로젝트   
 ### 프로젝트 제목을 클릭하시면 해당 프로젝트 소개로 이동합니다.
-[원더(Wonder)](https://github.com/hyokker/wonder)
-***
+[원더(Wonder)](https://github.com/hyokker/wonder)   
 [Melon Project](https://github.com/hyokker/semiproject)
