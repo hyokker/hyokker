@@ -2,14 +2,7 @@
 
 ![Hyogeon Kim's GitHub stats](https://github-readme-stats.vercel.app/api?username=hyokker&theme=dark&show_icons=true)
 
-<img src="https://user-images.githubusercontent.com/105181325/180355371-d7d9383a-f46d-44b3-8b2a-b16b585d9559.jpg" width="30%" height="30%">
-</div>
-  
-  
-<div align="center">
-  
-  협업을 좋아하고 음악을 사랑하는 개발자 Hyokker입니다.
-</div>
+
 
 <h3 align="center">🛠 기술 🛠</h3>
 
@@ -33,11 +26,7 @@
 </p>   
    
    
-<p align="center">   
-안녕하십니까! 개발자가 되고 싶은 김효건입니다.
-<br>
-부족한게 많지만 무엇이든 적극적으로 해결해 나가겠습니다!   
-</p>
+
 
 
 </div>   
